@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Инесса Кузнецова](https://up.htmlacademy.ru/adaptive/14/user/667135).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Попков](https://htmlacademy.ru/profile/id111287).
 
 ---
 
