@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип «ПИНК»">
       </a>
       <nav class="main-nav">
@@ -32,15 +32,15 @@
     <main class="page-main">
       <h1 class="visually-hidden">Страница с фотографиями</h1>
       <section class="photo-preview preview--img">
-        <div class="photo-preview__text">Фотографии пользователей</div>
+        <h1 class="photo-preview__text">Фотографии пользователей</h1>
       </section>
-      <section class="photo-title photo-title__section">
+      <section class="photo-title">
         <p class="photo-title__text photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
       </section>
       <section class="photo-gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
-        <div class="photo-gallery__list  slider__list">
-            <blockquote class="photo-gallery__item  slider__item">
+        <div class="photo-gallery__list">
+            <blockquote class="photo-gallery__item">
               <p class="photo-gallery__author-picture">
                   <img class="photo-gallery__author-image" src="img/picture-anna.jpg" width="320" height="137" alt="Фото от Анны">
                   <div class="photo-gallery__status">Панорама дня</div>
@@ -57,7 +57,7 @@
                   </li>
               </ul>
             </blockquote>
-            <blockquote class="photo-gallery__item  slider__item">
+            <blockquote class="photo-gallery__item">
                <p class="photo-gallery__author-picture">
                    <img class="photo-gallery__author-image" src="img/picture-levon.jpg" width="280" height="180" alt="Фото от Левона">
                </p>
@@ -73,7 +73,7 @@
                    </li>
                </ul>
             </blockquote>
-            <blockquote class="photo-gallery__item  slider__item">
+            <blockquote class="photo-gallery__item">
                 <p class="photo-gallery__author-picture">
                     <img class="photo-gallery__author-image" src="img/picture-anton.jpg" width="280" height="180" alt="Фото от Антона">
                 </p>
@@ -89,7 +89,7 @@
                     </li>
                 </ul>
             </blockquote>
-            <blockquote class="photo-gallery__item  slider__item">
+            <blockquote class="photo-gallery__item">
                  <p class="photo-gallery__author-picture">
                      <img class="photo-gallery__author-image" src="img/picture-boris.jpg" width="280" height="180" alt="Фото от Бориса">
                  </p>
@@ -105,7 +105,7 @@
                      </li>
                  </ul>
             </blockquote>
-            <blockquote class="photo-gallery__item  slider__item">
+            <blockquote class="photo-gallery__item">
                   <p class="photo-gallery__author-picture">
                       <img class="photo-gallery__author-image" src="img/picture-sergey.jpg" width="280" height="180" alt="Фото от Сергея">
                   </p>
@@ -121,7 +121,7 @@
                       </li>
                   </ul>
             </blockquote>
-            <blockquote class="photo-gallery__item  slider__item">
+            <blockquote class="photo-gallery__item">
                    <p class="photo-gallery__author-picture">
                        <img class="photo-gallery__author-image" src="img/picture-maks.jpg" width="280" height="180" alt="Фото от Максима">
                    </p>
@@ -137,7 +137,7 @@
                        </li>
                    </ul>
             </blockquote>
-            <blockquote class="photo-gallery__item  slider__item">
+            <blockquote class="photo-gallery__item">
                     <p class="photo-gallery__author-picture">
                         <img class="photo-gallery__author-image" src="img/picture-nadya.jpg" width="280" height="180" alt="Фото от Надежды">
                     </p>
@@ -162,17 +162,17 @@
         <h2 class="visually-hidden">Запостить Фото!</h2>
         <form class="photo-post__form" action="https://echo.htmlacademy.ru" method="post">
             <p class="photo-post__author-picture">
-              <img class="photo-post__author-image--new" src="img/picture-new.jpg" width="280" height="374" alt="Новое фото пользователя для поста">
+              <img class="photo-post__author--img" src="img/picture-new.jpg" width="280" height="374" alt="Новое фото пользователя для поста">
             </p>
             <div class="photo-post__change">
               <button class="photo-post__change-button button-crop" type="button" aria-label="Обрезать">
-                <img class="photo-post__change-icon-crop change-icon-crop" src="img/crop.svg" width="48" height="48" alt="Обрезать">
+                <img class="photo-post__change-icon icon-crop" src="img/crop.svg" width="48" height="48" alt="Обрезать">
               </button>
               <button class="photo-post__change-button button-fill" type="button" aria-label="Насыщенность">
-                <img class="photo-post__change-icon-fill change-icon-fill" src="img/fill.svg" width="48" height="48" alt="Насыщенность">
+                <img class="photo-post__change-icon icon-fill" src="img/fill.svg" width="48" height="48" alt="Насыщенность">
               </button>
               <button class="photo-post__change-button button-contrast" type="button" aria-label="Контрастность">
-                <img class="photo-post__change-icon-contrast change-icon-contrast" src="img/contrast.svg" width="48" height="48" alt="Контрастность">
+                <img class="photo-post__change-icon icon-contrast" src="img/contrast.svg" width="48" height="48" alt="Контрастность">
               </button>
             </div>
             <div class="photo-post__range-controls">
@@ -181,8 +181,8 @@
               <input class="range-toggle range-toggle__input" type="range" min="" max="" step="1">
             </div>
             <div class="photo-post__user-button">
-              <input class="photo-post__user-button__input photo-post__button-on" type="submit" value="Запостить">
-              <input class="photo-post__user-button__input photo-post__button-off" type="reset" value="Отмена">
+              <input class="photo-post__user-btn photo-post__button-on" type="submit" value="Запостить">
+              <input class="photo-post__user-btn photo-post__button-off" type="reset" value="Отмена">
             </div>
         </form>
       </section>

@@ -31,24 +31,24 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Главная страница приложения "ПИНК"</h1>
-      <div class="main-img">
+      <section class="intro">
         <h2 class="visually-hidden">Главная фотография приложения</h2>
-        <img class="page-main__main-img" src="img/back-mobile.img" width="462" height="320" alt="Главная фотография «ПИНК»">
-      </div>
+        <img class="intro__main-img" src="img/back-mobile.img" width="462" height="320" alt="Главная фотография «ПИНК»">
+      </section>
       <section class="download">
         <h2 class="visually-hidden">Скачать "ПИНК"</h2>
         <button class="download__btn" type="button" aria-label="Скачать приложение">Скачать приложение</button>
         <div class="download__icon">
-          <img src="img/apple-logo.svg" alt="Логотип Apple" width="47" height="56">
-          <img src="img/android-logo.svg" alt="Логотип Android" width="43" height="47">
-          <img src="img/microsoft-logo.svg" alt="Логотип Microsoft" width="44" height="41">
+          <a class="download__icon--href" href="https://www.apple.com/ru/apple-pay"><div class="apple--href">Apple</div></a>
+          <a class="download__icon--href" href="https://androidapplications.ru"><div class="android--href">Android</div></a>
+          <a class="download__icon--href" href="https://www.microsoft.com/ru-ru"><div class="microsoft--href">Microsoft</div></a>
         </div>
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
       </section>
       <section class="motion">
         <h2 class="visually-hidden">Предложения</h2>
-        <div class="motion-question">Устали от серости мегаполиса?</div>
-        <div class="motion-answer">Нам есть, что вам  предложить!</div>
+        <div class="motion__question">Устали от серости мегаполиса?</div>
+        <div class="motion__answer">Нам есть, что вам  предложить!</div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества "ПИНК"</h2>
@@ -67,7 +67,7 @@
           </li>
         </ul>
         <a class="advantages__img">
-           <img class="advantages__img-iphone" src="img/img-iphone_mobile.img" width="157" height="320" alt="Фото Iphone со смайликом">Всем привет!
+           <img class="advantages__img--iphone" src="img/img-iphone_mobile.img" width="157" height="320" alt="Фото Iphone со смайликом">Всем привет!
         </a>
       </section>
       <section class="comments">
@@ -75,39 +75,39 @@
         <h3 class="comments__user-name">Николай Петров</h3>
         <p class="comments__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился сосвоей будущей женой в комментариях к выложнной фотографии»</p>
         <p class="comments__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">○</button>
-            <button class="slider__toggle" type="button">○</button>
-            <button class="slider__toggle" type="button">○</button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
         </p>
       </section>
       <section class="cost">
         <h2 class="visually-hidden">Стоимость приложения</h2>
-        <div class="cost">
+        <div class="cost-value">
           <a class="cost__logo">
              <img class="cost__logo-hit" src="img/img-iphone_mobile.img" width="74" height="74" alt="Лого ХИТ">
           </a>
-          <p class="cost-text">Стандарт</p>
-          <p class="cost-price">3,99 USD</p>
+          <p class="cost__text">Стандарт</p>
+          <p class="cost__price">3,99 USD</p>
         </div>
         <ul class="cost-list">
           <li class="cost-option">
             <label for="cost-option__filter-pink">Розовый фильтр</label>
-            <input class="visually-hidden cost-option__input__filter-pink" type="checkbox" name="filter-pink" id="cost-option__filter-pink" checked>
+            <input class="visually-hidden cost-option__input--filter-pink" type="checkbox" name="filter-pink" id="cost-option__filter-pink" checked>
           </li>
           <li class="cost-option">
             <label for="cost-option__smiles">Смайлики</label>
-            <input class="visually-hidden cost-option__input__smiles" type="checkbox" name="smiles" id="cost-option__smiles" checked>
+            <input class="visually-hidden cost-option__input--smiles" type="checkbox" name="smiles" id="cost-option__smiles" checked>
           </li>
           <li class="cost-option">
             <label for="cost-option__comments">Комментарии</label>
-            <input class="visually-hidden cost-option__input__comments" type="checkbox" name="comments" id="cost-option__comments">
+            <input class="visually-hidden cost-option__input--comments" type="checkbox" name="comments" id="cost-option__comments">
           </li>
         </ul>
-        <p class="comments__toggles slider__toggles">
-            <button class="slider__toggle" type="button">○</button>
-            <button class="slider__toggle slider__toggle--active" type="button">○</button>
-            <button class="slider__toggle" type="button">○</button>
-        </p>
+      </section>
+      <section class="comments__toggles slider__toggles">
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle slider__toggle--active" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
       </section>
       <section class="page-contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -133,7 +133,6 @@
           </p>
         </div>
         <div class="page-contacts__map map">
-           <div class="contacts__map-hidden"><img src="img/map-mask_mobile.img" alt="Маска карты" width="320" height="37"></div>
            <a class="contacts__map" href="#">
              <img src="img/map_mobile.img" alt="Карта" width="320" height="205">
            </a>
