@@ -40,18 +40,18 @@
       <section class="contest-form">
         <h2 class="visually-hidden">Форма на Конкурс</h2>
         <form class="contest-form__user" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="progress">
+          <fieldset class="user-name">
             <ul class="user-name__list">
               <h3 class="visually-hidden">Поля для заполнения личных данных Пользователя (ФИО)</h3>
-              <li class="user-name">
+              <li class="user-name__item">
                 <label class="user-name__label" for="surname">Фамилия:</label>
                 <input class="user-name__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
               </li>
-              <li class="user-name">
+              <li class="user-name__item">
                 <label class="user-name__label" for="name">Имя:</label>
                 <input class="user-name__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
               </li>
-              <li class="user-name">
+              <li class="user-name__item">
                 <label class="user-name__label" for="middle-name">Отчество:</label>
                 <input class="user-name__input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
               </li>
@@ -90,11 +90,11 @@
           <fieldset class="user-contacts">
             <ul class="user-contacts__list">
               <legend class="visually-hidden">Поля для заполнения контактов Пользователя</legend>
-              <li class="user-contacts__form">
+              <li class="user-contacts__form user-phone">
                 <label class="user-phone__label" for="user-phone">Номер телефона</label>
                 <input class="user-phone__input" type="text" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста" required>
               </li>
-              <li class="user-contacts__form">
+              <li class="user-contacts__form user-email">
                 <label class="user-email__label" for="user-email">Адрес почты</label>
                 <input class="user-email__input" type="text" id="user-email" name="user-email" placeholder="Введите почту *" required>
               </li>
@@ -103,31 +103,31 @@
           <fieldset class="interview">
             <legend class="interview__legend">С каким приложением путешествовали?</legend>
             <ul class="interview-list">
-              <li class="interview-list__li">
+              <li class="interview-list__item">
                 <input class="interview-list__input" type="checkbox" name="pink-ios" id="pink-ios" checked>
                 <label class="interview-list__label" for="pink-ios">Pink для iOS</label>
               </li>
-              <li class="interview-list__li">
+              <li class="interview-list__item">
                 <input class="interview-list__input" type="checkbox" name="pink-android" id="pink-android">
                 <label class="interview-list__label" for="pink-android">Pink на Android</label>
               </li>
-              <li class="interview-list__li">
+              <li class="interview-list__item">
                 <input class="interview-list__input" type="checkbox" name="windows-phone" id="windows-phone">
                 <label class="interview-list__label" for="windows-phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
-          <ul class="form__user-emotion__list">
+          <ul class="user-emotion">
             <h3 class="visually-hidden">Поля для заполнения впечатлений Пользователя</h3>
-            <li class="form__user-emotion">
-              <label class="form__user-emotion__label" for="user-emotion">Опишите свои эмоции</label>
-              <textarea class="form__user-emotion__input" id="user-emotion" name="user-emotion" rows="5" required>Можно прям в красках, не стесняясь в выражениях</textarea>
+            <li class="user-emotion__item">
+              <label class="user-emotion__label" for="user-emotion">Опишите свои эмоции</label>
+              <textarea class="user-emotion__input" id="user-emotion" name="user-emotion" rows="5" required>Можно прям в красках, не стесняясь в выражениях</textarea>
             </li>
           </ul>
-          <div class="form__user-button">
-            <input class="form__user-button__input" type="submit" value="Отправить форму">
+          <div class="user-button">
+            <input class="user-button__input" type="submit" value="Отправить форму">
           </div>
-          <small class="form__user__fields-required fields-required--bottom">
+          <small class="contest-form__fields-required contest-form__fields-required--bottom">
             <sup>*</sup> — обязательные поля
           </small>
         </form>

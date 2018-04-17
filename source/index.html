@@ -36,23 +36,22 @@
         <img class="intro__main-img" src="img/back-mobile.img" width="462" height="320" alt="Главная фотография «ПИНК»">
       </section>
       <section class="download">
-        <h2 class="visually-hidden">Скачать "ПИНК"</h2>
         <button class="download__btn" type="button" aria-label="Скачать приложение">Скачать приложение</button>
         <div class="download__icon">
-          <a class="download__icon--href" href="https://www.apple.com/ru/apple-pay"><div class="apple--href">Apple</div></a>
-          <a class="download__icon--href" href="https://androidapplications.ru"><div class="android--href">Android</div></a>
-          <a class="download__icon--href" href="https://www.microsoft.com/ru-ru"><div class="microsoft--href">Microsoft</div></a>
+          <a class="download__icon-href" href="https://www.apple.com/ru/apple-pay"><div class="apple-icon">Apple</div></a>
+          <a class="download__icon-href" href="https://androidapplications.ru"><div class="android-icon">Android</div></a>
+          <a class="download__icon-href" href="https://www.microsoft.com/ru-ru"><div class="microsoft-icon">Microsoft</div></a>
         </div>
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
       </section>
       <section class="motion">
         <h2 class="visually-hidden">Предложения</h2>
         <div class="motion__question">Устали от серости мегаполиса?</div>
-        <div class="motion__answer">Нам есть, что вам  предложить!</div>
+        <div class="motion__answer">Нам есть, что вам предложить!</div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества "ПИНК"</h2>
-        <ul class="advantages__list">
+        <ul class="advantages__list list-item">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
@@ -66,19 +65,21 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <a class="advantages__img">
-           <img class="advantages__img--iphone" src="img/img-iphone_mobile.img" width="157" height="320" alt="Фото Iphone со смайликом">Всем привет!
+        <a class="advantages__list list-img">
+           <img class="advantages__img" src="img/img-iphone_mobile.img" width="157" height="320" alt="Фото Iphone со смайликом">Всем привет!
         </a>
       </section>
       <section class="comments">
-        <h2 class="visually-hidden">Отзывы пользователей</h2>
-        <h3 class="comments__user-name">Николай Петров</h3>
-        <p class="comments__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился сосвоей будущей женой в комментариях к выложнной фотографии»</p>
-        <p class="comments__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-        </p>
+        <div class="comments__wrapper slider">
+          <h2 class="visually-hidden">Отзывы пользователей</h2>
+          <h3 class="comments__user-name">Николай Петров</h3>
+          <p class="comments__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился сосвоей будущей женой в комментариях к выложнной фотографии»</p>
+          <p class="comments__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--active" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+          </p>
+        </div>
       </section>
       <section class="cost">
         <h2 class="visually-hidden">Стоимость приложения</h2>
@@ -91,49 +92,49 @@
         </div>
         <ul class="cost-list">
           <li class="cost-option">
-            <label for="cost-option__filter-pink">Розовый фильтр</label>
-            <input class="visually-hidden cost-option__input--filter-pink" type="checkbox" name="filter-pink" id="cost-option__filter-pink" checked>
+            <label for="cost-option__filter">Розовый фильтр</label>
+            <input class="visually-hidden cost-option__input" type="checkbox" name="filter-pink" id="cost-option__filter-pink" checked>
           </li>
           <li class="cost-option">
             <label for="cost-option__smiles">Смайлики</label>
-            <input class="visually-hidden cost-option__input--smiles" type="checkbox" name="smiles" id="cost-option__smiles" checked>
+            <input class="visually-hidden cost-option__input" type="checkbox" name="smiles" id="cost-option__smiles" checked>
           </li>
           <li class="cost-option">
             <label for="cost-option__comments">Комментарии</label>
-            <input class="visually-hidden cost-option__input--comments" type="checkbox" name="comments" id="cost-option__comments">
+            <input class="visually-hidden cost-option__input" type="checkbox" name="comments" id="cost-option__comments">
           </li>
         </ul>
       </section>
-      <section class="comments__toggles slider__toggles">
+      <section class="application-toggles slider">
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle slider__toggle--active" type="button"></button>
           <button class="slider__toggle" type="button"></button>
       </section>
       <section class="page-contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="page-contacts__contacts contacts">
-          <b class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</b>
-          <p class="contacts__text">
+        <div class="page-contacts__list list-contacts">
+          <b class="list-contacts__title">Остались вопросы?<br>Свяжитесь с нами!</b>
+          <p class="list-contacts__text">
              Звоните<br>
-             <a class="contacts__phone" href="tel:+78125556666">
-                <span class="contacts__phone-mobile">Тел.:</span>+7 (812) 555-66-66
+             <a class="list-contacts__link" href="tel:+78125556666">
+                <span class="list-contacts__phone">Тел.:</span>+7 (812) 555-66-66
              </a>
           </p>
         </div>
-        <div class="page-contacts__email email">
-          <p class="contacts__text">
+        <div class="page-contacts__list list-email">
+          <p class="list-email__text">
              Пишите<br>
-             <a class="contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+             <a class="list-email__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </div>
-        <div class="page-contacts__address address">
-          <p class="contacts__text">
+        <div class="page-contacts__list list-address">
+          <p class="list-address__text">
              Приезжайте в гости:<br>
-             <a class="contacts__address" href="#">ул. Большая Конюшенная, 19/8</a>
+             <a class="list-address__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </p>
         </div>
-        <div class="page-contacts__map map">
-           <a class="contacts__map" href="#">
+        <div class="page-contacts__map list-map">
+           <a class="list-map__link" href="#">
              <img src="img/map_mobile.img" alt="Карта" width="320" height="205">
            </a>
         </div>
