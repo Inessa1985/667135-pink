@@ -1,0 +1,53 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: @font-family-main;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: @color-main;
+  width: 320px;
+  background-color: @background-color-main;
+}
+
+a {
+  color: @color-white;
+  text-decoration: none;
+}
+
+fieldset {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+// Подключаем шрифты
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("OpenSans-regular"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("OpenSans-bold"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("OpenSans-light"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
