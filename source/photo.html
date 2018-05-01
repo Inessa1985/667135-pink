@@ -39,13 +39,16 @@
         <p class="photo-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
       <section class="photo-gallery">
-        <div class="photo-gallery__list">
             <blockquote class="photo-gallery__item">
               <p class="photo-gallery__picture author-picture">
                   <span class="author-picture__status">Панорама дня</span>
-                  <img class="author-picture__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                    <source media="(min-width: 620px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                    <img class="author-picture__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото от Анны">
+                  </picture>
               </p>
-              <ul class="photo-gallery__caption author-caption plain-list">
+              <ul class="photo-gallery__caption author-caption author-caption--panorama plain-list">
                   <li class="author-caption__name">
                     <b class="author-caption__nickname">Анна</b>
                     <time class="author-caption__date" datetime="16:10">(5 минут назад)</time>
@@ -57,9 +60,14 @@
                   </li>
               </ul>
             </blockquote>
+          <div class="photo-gallery__list">
             <blockquote class="photo-gallery__item">
                 <p class="photo-gallery__picture author-picture">
-                    <img class="author-picture__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от Левона">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 620px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="author-picture__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото от Левона">
+                  </picture>
                 </p>
                 <ul class="photo-gallery__caption author-caption plain-list">
                     <li class="author-caption__name">
@@ -75,7 +83,11 @@
             </blockquote>
             <blockquote class="photo-gallery__item">
                 <p class="photo-gallery__picture author-picture">
-                    <img class="author-picture__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от Антона">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 620px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="author-picture__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото от Антона">
+                  </picture>
                 </p>
                 <ul class="photo-gallery__caption author-caption plain-list">
                     <li class="author-caption__name">
@@ -91,7 +103,11 @@
             </blockquote>
             <blockquote class="photo-gallery__item">
                   <p class="photo-gallery__picture author-picture">
-                      <img class="author-picture__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от Бориса">
+                      <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                        <source media="(min-width: 620px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                        <img class="author-picture__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото от Бориса">
+                      </picture>
                   </p>
                   <ul class="photo-gallery__caption author-caption plain-list">
                       <li class="author-caption__name">
@@ -107,7 +123,11 @@
             </blockquote>
             <blockquote class="photo-gallery__item">
                   <p class="photo-gallery__picture author-picture">
-                      <img class="author-picture__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от Сергея">
+                    <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                      <source media="(min-width: 620px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                      <img class="author-picture__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото от Сергея">
+                    </picture>
                   </p>
                   <ul class="photo-gallery__caption author-caption plain-list">
                       <li class="author-caption__name">
@@ -123,7 +143,14 @@
             </blockquote>
             <blockquote class="photo-gallery__item">
                     <p class="photo-gallery__picture author-picture">
+                      <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                        <source media="(min-width: 620px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                        <img class="author-picture__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото от Максима">
+                      </picture>
+                      <!--
                         <img class="author-picture__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от Максима">
+                      -->
                     </p>
                     <ul class="photo-gallery__caption author-caption plain-list">
                         <li class="author-caption__name">
@@ -139,7 +166,14 @@
             </blockquote>
             <blockquote class="photo-gallery__item">
                     <p class="photo-gallery__picture author-picture">
+                      <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                        <source media="(min-width: 620px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                        <img class="author-picture__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото от Надежды">
+                      </picture>
+                      <!--
                         <img class="author-picture__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от Надежды">
+                      -->
                     </p>
                     <ul class="photo-gallery__caption author-caption plain-list">
                         <li class="author-caption__name">
@@ -156,14 +190,19 @@
         </div>
       </section>
       <section class="photo-spread">
-        <p class="photo-spread__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photo-spread__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="photo-post">
         <h2 class="visually-hidden">Запостить Фото!</h2>
         <form class="photo-post__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="photo-post__picture author-portrait">
-              <img class="author-portrait__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Новое фото пользователя для поста">
-            </p>
+          <p class="photo-post__picture author-portrait">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 620px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="author-picture__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Новое фото пользователя для поста">
+            </picture>
+          </p>
+          <div class="photo-post__wrapper">
             <div class="photo-post__change">
               <button class="photo-post__change-button button-crop" type="button" aria-label="Обрезать">
                 <img class="photo-post__change-icon button-crop__icon" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать">
@@ -175,15 +214,28 @@
                 <img class="photo-post__change-icon button-contrast__icon" src="img/icon-editor-contrast.svg" width="33" height="33" alt="Контрастность">
               </button>
             </div>
-            <div class="photo-post__range-controls range-controls">
-              <div class="range-controls__bar"></div>
-              <div class="range-controls__toggle"></div>
-              <input class="range-controls__input" type="range" min="0" max="100" step="1">
-            </div>
+            <ul class="photo-post__range-controls range-controls plain-list">
+              <li class="range-controls__item">
+                <div class="range-controls__bar"></div>
+                <div class="range-controls__toggle"></div>
+                <input class="range-controls__input" type="range" min="0" max="100" step="1">
+              </li>
+              <li class="range-controls__item range-controls__item--vh">
+                <div class="range-controls__bar"></div>
+                <div class="range-controls__toggle"></div>
+                <input class="range-controls__input" type="range" min="0" max="100" step="1">
+              </li>
+              <li class="range-controls__item range-controls__item--vh">
+                <div class="range-controls__bar"></div>
+                <div class="range-controls__toggle"></div>
+                <input class="range-controls__input" type="range" min="0" max="100" step="1">
+              </li>
+            </ul>
             <div class="photo-post__user-button">
               <input class="photo-post__user-btn photo-post__button-on" type="submit" value="Запостить">
               <input class="photo-post__user-btn photo-post__button-off" type="reset" value="Отмена">
             </div>
+          </div>
         </form>
       </section>
     </main>

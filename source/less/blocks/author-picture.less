@@ -1,5 +1,6 @@
 .author-picture {
   margin: 0 auto;
+  margin-bottom: -4px;
   padding: 0;
   font-family: @font-family-main;
   position: relative;
@@ -11,6 +12,7 @@
 
   &__status {
     margin: 0;
+    padding: 0;
     margin-bottom: -35px;
     margin-left: 180px;
     width: 140px;
@@ -26,5 +28,19 @@
     align-items: center;
     position: relative;
     background-color: @color-pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .author-picture__status {
+    margin-bottom: -90px;
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .author-picture__status {
+    margin-bottom: -90px;
+    margin-left: 940px;
   }
 }
