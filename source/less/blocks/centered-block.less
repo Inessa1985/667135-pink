@@ -1,6 +1,17 @@
 .centered-block {
   margin: 0 auto;
   padding: 0;
-  min-width: 320px;
-  border: 1px solid brown;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .centered-block {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .centered-block {
+    width: 1200px;
+  }
 }

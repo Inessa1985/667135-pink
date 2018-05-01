@@ -7,17 +7,16 @@
   </head>
   <body>
     <header class="page-header centered-block">
-      <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
         <a class="page-header__logo">
           <picture class="page-header__logo-picture">
             <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg" width="147" height="40">
-            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg" width="147" height="40">
+            <source media="(min-width: 620px)" srcset="img/logotype-white-tablet.svg" width="147" height="40">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «ПИНК»">
           </picture>
         </a>
         <nav class="site-list">
           <div class="site-list__wrapper">
-            <button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="site-list__toggle" type="button">Меню</button>
             <ul class="site-list__items plain-list">
               <li class="site-list__item site-list__item--active">
                 <a>Главная</a>
@@ -34,7 +33,6 @@
             </ul>
           </div>
         </nav>
-      </div>
     </header>
     <main class="page-main centered-block">
       <h1 class="visually-hidden">Главная страница приложения "ПИНК"</h1>
@@ -42,22 +40,23 @@
         <h2 class="visually-hidden">Главная фотография приложения</h2>
       </section>
       <section class="download">
+        <div class="download__title download__title--vh">Взгляните<br>на жизнь<br>иначе!</div>
         <button class="download__btn" type="button" aria-label="Скачать приложение">Скачать приложение</button>
         <div class="download__icon">
           <a class="download__icon-href" href="https://www.apple.com/ru/apple-pay"><div class="apple-icon"></div></a>
           <a class="download__icon-href" href="https://androidapplications.ru"><div class="android-icon"></div></a>
           <a class="download__icon-href" href="https://www.microsoft.com/ru-ru"><div class="microsoft-icon"></div></a>
         </div>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+        <p class="download__text">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Window</p>
       </section>
       <section class="motion">
         <h2 class="visually-hidden">Предложения</h2>
         <div class="motion__question">Устали от серости мегаполиса?</div>
-        <div class="motion__answer">Нам есть, что вам предложить!</div>
+        <div class="motion__answer">Нам есть, что вам<br>предложить!</div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества "ПИНК"</h2>
-        <ul class="advantages__list plain-list">
+        <ul class="advantages__list advantages__list--text plain-list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
@@ -73,19 +72,19 @@
         </ul>
         <ul class="advantages__list plain-list">
           <li class="advantages__item">
-            <img class="advantages__img advantages__img--vh" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото Iphone ч/б">
+              <img class="advantages__img advantages__img--1" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото Iphone ч/б">
           </li>
-          <li class="advantages__item">
-            <img class="advantages__img advantages__img--vh" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото Iphone без смайлика">
+          <li class="advantages__item advantages__item--vh">
+            <img class="advantages__img" src="img/iphone-screen-desktop@1x.png" width="186" height="382" alt="Фото Iphone без смайлика">
           </li>
-          <li class="advantages__item">
-            <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото Iphone со смайликом">
+          <li class="advantages__item advantages__item--vh">
+            <img class="advantages__img" src="img/iphone-screen-desktop@1x.png" width="186" height="382" alt="Фото Iphone со смайликом">
           </li>
         </ul>
       </section>
       <section class="proposal proposal--vh">
         <div class="proposal__image">
-            <img class="proposal__img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «ПИНК»">
+            <h2 class="visually-hidden">Фото Таймер</h2>
         </div>
         <div class="proposal__info">
           <h2 class="proposal__title">Эффект на 24 часа!</h2>
@@ -99,38 +98,58 @@
           <h3 class="comments__user-name">Николай Петров</h3>
           <p class="comments__author-person">25 лет, водитель трамвая</p>
           <p class="comments__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился сосвоей будущей женой в комментариях к выложенной фотографии»</p>
-          <p class="comments__toggles slider">
+          <p class="comments__toggles slider slider--vh">
               <button class="slider__toggle slider__toggle--active" type="button"></button>
               <button class="slider__toggle" type="button"></button>
               <button class="slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
-      <section class="cost">
+      <section class="cost-menu">
         <h2 class="visually-hidden">Стоимость приложения</h2>
-        <div class="cost-value">
-          <a class="cost-value__logo">
-              <div class="cost__logo-hit"></div>
-          </a>
-          <div class="cost-value__text">
-              <p class="cost__text">Стандарт</p>
-              <p class="cost__price">3,99 USD</p>
-          </div>
-        </div>
-        <ul class="cost-list plain-list">
-          <li class="cost-option">
-            <label for="cost-option__filter-pink">Розовый фильтр</label>
-            <input class="visually-hidden cost-option__input" type="checkbox" name="filter-pink" id="cost-option__filter-pink" checked>
-          </li>
-          <li class="cost-option">
-            <label for="cost-option__smiles">Смайлики</label>
-            <input class="visually-hidden cost-option__input" type="checkbox" name="smiles" id="cost-option__smiles" checked>
-          </li>
-          <li class="cost-option">
-            <label for="cost-option__comments">Комментарии</label>
-            <input class="visually-hidden cost-option__input" type="checkbox" name="comments" id="cost-option__comments">
-          </li>
-        </ul>
+        <div class="cost-menu__wrapper">
+          <ul class="cost-menu__list plain-list">
+            <li class="cost-menu__item cost-menu__item--vh">
+              <div class="cost-menu__header cost-menu__header--light"></div>
+              <p class="cost-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
+              <p class="cost-menu__feature buy-menu__feature--no">Смайлики</p>
+              <p class="cost-menu__feature buy-menu__feature--no">Комментарии</p>
+            </li>
+            <li class="cost-menu__item cost-menu__item--vh">
+              <div class="cost-menu__header">
+                <div class="cost-menu__text">
+                  <h3 class="cost-menu__title">База</h3>
+                  <b class="cost-menu__price">1,99 usd</b>
+                </div>
+              </div>
+              <p class="cost-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
+              <p class="cost-menu__feature buy-menu__feature--no">Смайлики</p>
+              <p class="cost-menu__feature buy-menu__feature--no">Комментарии</p>
+            </li>
+            <li class="cost-menu__item cost-menu__item--standart">
+               <div class="cost-menu__header">
+                 <div class="cost-menu__logo"></div>
+                 <div class="cost-menu__text">
+                   <h3 class="cost-menu__title">Стандарт</h3>
+                   <b class="cost-menu__price">3,99 usd</b>
+                 </div>
+               </div>
+               <p class="cost-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
+               <p class="cost-menu__feature buy-menu__feature--yes">Смайлики</p>
+               <p class="cost-menu__feature buy-menu__feature--no">Комментарии</p>
+            </li>
+            <li class="cost-menu__item cost-menu__item--vh">
+              <div class="cost-menu__header">
+                <div class="cost-menu__text">
+                  <h3 class="cost-menu__title">Анлим</h3>
+                  <b class="cost-menu__price">9,99 usd</b>
+                </div>
+              </div>
+              <p class="cost-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
+              <p class="cost-menu__feature buy-menu__feature--yes">Смайлики</p>
+              <p class="cost-menu__feature buy-menu__feature--yes">Комментарии</p>
+            </li>
+          </ul>
       </section>
       <section class="application-toggles slider">
           <button class="slider__toggle" type="button"></button>
@@ -138,31 +157,31 @@
           <button class="slider__toggle" type="button"></button>
       </section>
       <section class="page-contacts">
-        <div class="page-contacts__list list-contacts">
-          <b class="list-contacts__title">Остались вопросы?<br>Свяжитесь с нами!</b>
-          <p class="list-contacts__text">
-              Звоните<br>
-              <a class="list-contacts__link" href="tel:+78125556666">
-                <span class="list-contacts__phone">Тел.:</span>+7 (812) 555-66-66
-              </a>
-          </p>
-        </div>
-        <div class="page-contacts__list list-email">
-          <p class="list-email__text">
-              Пишите<br>
-              <a class="list-email__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-        </div>
-        <div class="page-contacts__list list-address">
-          <p class="list-address__text">
-              Приезжайте в гости:<br>
-              <a class="list-address__link" href="#">ул. Большая<br>Конюшенная, 19/8</a>
-          </p>
+        <div class="page-contacts__title">Остались вопросы?<br>Свяжитесь с нами!</div>
+        <div class="page-contacts__wrapper">
+          <div class="page-contacts__list list-contacts">
+            <p class="list-contacts__text">
+                Звоните<br>
+                <a class="list-contacts__link" href="tel:+78125556666">
+                  <span class="list-contacts__phone">Тел.:</span>+7 (812) 555-66-66
+                </a>
+            </p>
+          </div>
+          <div class="page-contacts__list list-email">
+            <p class="list-email__text">
+                Пишите<br>
+                <a class="list-email__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </div>
+          <div class="page-contacts__list list-address">
+            <p class="list-address__text">
+                Приезжайте в гости:<br>
+                <a class="list-address__link" href="#">ул. Большая<br>Конюшенная, 19/8</a>
+            </p>
+          </div>
         </div>
         <div class="page-contacts__map list-map">
-            <a class="list-map__link" href="#">
-              <img src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="645">
-            </a>
+              <div class="list-map__image"></div>
         </div>
       </section>
     </main>

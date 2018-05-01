@@ -1,87 +1,103 @@
 .page-header {
   position: relative;
   margin: 0 auto;
-  top: 0;
-  padding: 0;
-  width: 320px;
+  padding: 0 20px;
   font-size: 22px;
-  line-height: 65px;
   font-weight: 700;
+  width: 100%;
   color: @color-white;
   text-transform: uppercase;
   display: flex;
-  background-color: rgba(29, 38, 49, 0.3);
+  flex-direction: column;
+  background-color: rgba(14, 17, 22, 0.4);
   z-index: 10;
-}
-
-.page-header__wrapper {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
 }
 
 .page-header__logo {
   margin: 0;
   padding: 0;
-  top: 0;
-  width: auto;
+  width: 75px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid brown;
+  /*border: 1px solid brown;*/
 }
+
 .page-header__logo-picture {
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
+  width: 75px;
+  height: 22px;
 }
 
 .page-header__logo-image {
   margin: 0;
   padding: 0;
-  width: auto;
-  height: auto;
+  width: 75px;
+  height: 22px;
   cursor: pointer;
-  border: 1px solid darkblue;
+  /*border: 1px solid darkblue;*/
 }
 
-@media (max-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .page-header {
-    margin: 0;
-    padding: 0;
-    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    width: 660px;
+    box-sizing: border-box;
+    min-height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  .page-header__wrapper {
-    margin: 0;
-    padding: 0;
-    width: 620px;
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__logo-picture {
+    width: 147px;
+    height: 40px;
+    z-index: 12;
   }
 
   .page-header__logo-image {
     width: 147px;
     height: 40px;
+    z-index: 12;
   }
 }
 
-@media (max-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .page-header {
-    margin: 0;
-    padding: 0;
-    width: auto;
+    margin: 0 auto;
+    padding: 0 130px;
+    width: 1200px;
+    min-height: 110px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .page-header__wrapper {
-    margin: 0;
-    padding: 0;
-    width: 940px;
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__logo-picture {
+    width: 147px;
+    height: 40px;
+    z-index: 12;
   }
 
   .page-header__logo-image {
     width: 147px;
     height: 40px;
+    z-index: 12;
   }
-
 }

@@ -1,7 +1,6 @@
 .site-list {
   margin: 0 auto;
   padding: 0;
-  top: 0;
   font-family: @font-family-main;
   width: 320px;
   background-color: inherit;
@@ -11,7 +10,9 @@
 .site-list__wrapper {
   margin: 0;
   padding: 0;
+  width: 320px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   /*border: 1px solid green;*/
 }
@@ -29,24 +30,26 @@
   background-size: auto;
   display: block;
   align-self: flex-end;
-  order: 2;
 }
 
 .site-list__items {
   margin: 0;
   padding: 0;
+  width: 320px;
   list-style: none;
   background-color: @background-color-dark-second;
 /*border: 1px solid blue;*/
 }
 
+/*
 .site-list__items {
   display: none;
 }
+*/
 
 .site-list__item {
   margin: 0 auto;
-  padding: 0;
+  padding: 20px 0;
   font-family: @font-family-main;
   font-size: 14px;
   font-weight: bold;
@@ -54,54 +57,67 @@
   text-transform: uppercase;
   text-align: center;
   color: @color-white;
-  width: 100%;
+  width: 320px;
 }
 
 @media (min-width: @tablet-width) {
+
   .site-list {
     margin: 0;
-    width: 100%;
+    width: 470px;
     display: flex;
   }
 
   .site-list__wrapper {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 640px;
+    width: 470px;
     margin: 0;
     padding: 0;
   }
 
   .site-list__items {
-    display: none;
+    margin: 0;
+    padding: 0;
+    width: 660px;
+    list-style: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+
   .site-list {
     width: auto;
+    background-color: transparent;
   }
 
   .site-list__wrapper {
+    margin: 0;
+    padding: 0;
+    width: 790px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 790px;
+    background-color: transparent;
+  }
+
+  .site-list__items {
     margin: 0;
+    padding: 0;
+    width: 680px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
   }
 
   .site-list__toggle {
     display: none;
   }
 
-  .site-list__items {
-    margin: 0;
-    padding: 0 10px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(29, 38, 49, 0.3);
+  .site-list__item {
+    background-color: transparent;
   }
-
 }
