@@ -1,5 +1,6 @@
 .social {
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 0;
   font-family: @font-family-main;
   width: 200px;
@@ -63,4 +64,10 @@
   background-size: auto;
   display: block;
   color: @color-main;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-bottom: 0;
+  }
 }

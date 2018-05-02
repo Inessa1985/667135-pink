@@ -1,11 +1,15 @@
 .user-emotion {
   margin: 0 auto;
-  padding: 40px 0;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding: 0;
   font-family: @font-family-main;
   width: auto;
   position: relative;
   background-color: @background-color-main;
 
+  /*
   &__item {
     margin: 0 auto;
     padding: 0;
@@ -14,8 +18,8 @@
     flex-direction: column;
     align-items: center;
     background-color: @background-color-main;
-    /*border: 1px solid black;*/
   }
+  */
 
   &__label {
     margin: 0 auto;
@@ -23,7 +27,7 @@
     font-family: @font-family-main;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 550;
+    font-weight: 400;
     color: @color-pink;
     text-align: center;
     text-transform: uppercase;
@@ -41,5 +45,46 @@
     width: 276px;
     text-align: center;
     border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-emotion {
+    margin: 0;
+    margin-top: 49px;
+    margin-bottom: 65px;
+    padding: 0 56px;
+    width: 616px;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    order: 4;
+    box-sizing: border-box;
+  }
+
+  .user-emotion__label {
+    padding: 10px 38px;
+  }
+
+  .user-emotion__input {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 496px;
+    height: 194px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-emotion {
+    margin-top: 55px;
+    width: 940px;
+  }
+
+  .user-emotion__input {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 816px;
+    height: 124px;
   }
 }

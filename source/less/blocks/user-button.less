@@ -1,5 +1,6 @@
 .user-button {
   margin: 0 auto;
+  margin-bottom: 30px;
   padding: 10px 20px;
   width: auto;
   position: relative;
@@ -16,9 +17,23 @@
     text-transform: uppercase;
     text-align: center;
     width: 280px;
+    height: 63px;
     background-color: @color-green;
+    box-sizing: border-box;
     border: 2px solid @color-green;
     border-radius: 2;
     cursor: pointer;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-button {
+    margin: 0;
+    padding: 0;
+    order: 5;
+  }
+
+  .user-button__input {
+    width: 300px;
   }
 }

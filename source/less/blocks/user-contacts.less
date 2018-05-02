@@ -20,4 +20,53 @@
     background-color: @background-color-main;
     /*border: 1px solid black;*/
   }
+
+  &__legend {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-contacts {
+    margin-top: 60px;
+    padding: 20px 60px;
+    padding-bottom: 2px;
+    width: 616px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    order: 2;
+  }
+
+  .user-contacts__legend {
+    margin: 0 auto;
+    margin-left: 20px;
+    padding: 0 30px;
+    font-family: @font-family-main;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @color-pink;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+    white-space: normal;
+    display: table;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contacts {
+    padding: 35px 60px;
+    padding-bottom: 0;
+    width: 940px;
+  }
+
+  .user-contacts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-contacts__form {
+    margin: 0;
+  }
 }

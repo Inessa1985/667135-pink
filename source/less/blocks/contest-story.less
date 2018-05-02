@@ -1,6 +1,6 @@
 .contest-story {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 20px;
   font-family: @font-family-main;
   width: auto;
   position: relative;
@@ -19,5 +19,39 @@
     color: @color-main;
     text-align: center;
     width: auto;
+  }
+}
+
+.contest-story__text-vh {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-story {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .contest-story__text {
+    margin: 0 65px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 450;
+  }
+
+  .contest-story__text-vh {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-story {
+    padding: 0 130px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .contest-story__text {
+    margin: 0 100px;
   }
 }

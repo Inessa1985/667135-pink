@@ -24,12 +24,12 @@
 
   &__label {
     margin: 0 auto;
-    margin-left: 20px;
+    margin-left: 22px;
     padding: 0;
     font-family: @font-family-main;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 550;
+    font-weight: 400;
     color: @color-pink;
     text-transform: uppercase;
   }
@@ -37,10 +37,79 @@
   &__input {
     margin: 0 auto;
     padding: 0;
+    padding-left: 22px;
     font-family: @font-family-main;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
     color: @color-main;
+    width: 276px;
+    height: 59px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-name {
+    padding: 0;
+  }
+
+  .user-name__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .user-name__item {
+    margin: 0;
+    margin-bottom: 52px;
+  }
+
+  .user-name__label {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .user-name__label--mn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: -2;
+    margin-right: 15px;
+  }
+
+  .user-name__input--sn {
+    width: 521px;
+  }
+
+  .user-name__input--n {
+    width: 561px;
+  }
+
+  .user-name__input--mn {
+    width: 520px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-name {
+    width: 470px;
+  }
+
+  .user-name__list {
+    margin-top: 15px;
+  }
+
+  .user-name__input--sn {
+    width: 336px;
+  }
+
+  .user-name__input--n {
+    width: 376px;
+  }
+
+  .user-name__input--mn {
+    width: 337px;
   }
 }

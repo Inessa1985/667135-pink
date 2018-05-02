@@ -36,7 +36,9 @@
         <h1 class="contest-preview__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
       <section class="contest-story">
-        <p class="contest-story__text">Поделитесь своей историей и получите<br>шанс выиграть ценный приз - 1000<br>миль на вашу бонусную карту!</p>
+        <p class="contest-story__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          <span class="contest-story__text-vh">Пожалуйста, заполните форму ниже:</span>
+        </p>
       </section>
       <section class="contest-form">
         <form class="contest-form__user" action="https://echo.htmlacademy.ru" method="post">
@@ -46,24 +48,24 @@
                 <label class="user-name__label" for="surname">Фамилия:</label>
               </li>
               <li class="user-name__item">
-                <input class="user-name__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+                <input class="user-name__input user-name__input--sn" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="name">Имя:</label>
               </li>
               <li class="user-name__item">
-                <input class="user-name__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+                <input class="user-name__input user-name__input--n" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="user-name__item">
-                <label class="user-name__label" for="middle-name">Отчество:</label>
+                <label class="user-name__label user-name__label--mn" for="middle-name">Отчество:</label>
               </li>
               <li class="user-name__item">
-                <input class="user-name__input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
+                <input class="user-name__input user-name__input--mn" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="progress">
-            <div class="progress__legend">Ваши безбашенные достижения в путешествии</div>
+            <legend class="progress__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="progress-list plain-list">
               <li class="progress-list__item">
                 <input class="progress-list__input" type="checkbox" name="selfie" id="selfie" checked>
@@ -92,7 +94,7 @@
             </ul>
           </fieldset>
           <fieldset class="user-contacts">
-            <legend class="visually-hidden">Поля для заполнения контактов Пользователя</legend>
+            <legend class="user-contacts__legend">Контактная информация</legend>
             <ul class="user-contacts__list plain-list">
               <li class="user-contacts__form user-phone">
                 <label class="user-phone__label" for="user-phone">Номер телефона</label>
@@ -105,32 +107,30 @@
             </ul>
           </fieldset>
           <fieldset class="interview">
-            <label class="interview__legend">С каким приложением<br>путешествовали?</label>
+            <legend class="interview__legend">С каким приложением путешествовали?</legend>
             <ul class="interview-list plain-list">
               <li class="interview-list__item">
-                <input class="interview-list__input" type="checkbox" name="pink-ios" id="pink-ios" checked>
+                <input class="interview-list__input" type="radio" name="pink-ios" id="pink-ios" checked>
                 <label class="interview-list__label" for="pink-ios">Pink для iOS</label>
               </li>
               <li class="interview-list__item">
-                <input class="interview-list__input" type="checkbox" name="pink-android" id="pink-android">
+                <input class="interview-list__input" type="radio" name="pink-android" id="pink-android">
                 <label class="interview-list__label" for="pink-android">Pink на Android</label>
               </li>
               <li class="interview-list__item">
-                <input class="interview-list__input" type="checkbox" name="windows-phone" id="windows-phone">
+                <input class="interview-list__input" type="radio" name="windows-phone" id="windows-phone">
                 <label class="interview-list__label" for="windows-phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
-          <ul class="user-emotion plain-list">
-            <li class="user-emotion__item">
-              <label class="user-emotion__label" for="user-emotion">Опишите свои эмоции</label>
-              <textarea class="user-emotion__input" id="user-emotion" name="user-emotion" rows="5" required>Можно прям в красках, не стесняясь в выражениях</textarea>
-            </li>
-          </ul>
+          <fieldset class="user-emotion plain-list">
+            <legend class="user-emotion__label">Опишите свои эмоции</legend>
+            <textarea class="user-emotion__input" name="user-emotion" id="user-emotion" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
           <div class="user-button">
             <input class="user-button__input" type="submit" value="Отправить форму">
           </div>
-          <small class="contest-form__fields-required contest-form__fields-required--bottom">
+          <small class="contest-form__fields-required">
             <sup class="contest-form__fields-badge">*</sup> — обязательные поля
           </small>
         </form>
@@ -146,21 +146,27 @@
           <b class="visually-hidden">Мы в соцсетях!</b>
           <ul class="social__list plain-list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">twitter</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">facebook</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">youtube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+                <span class="visually-hidden">youtube</span>
+              </a>
             </li>
           </ul>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="35" alt="Логотип HTML">
-            </a>
-          </div>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML">
+          </a>
         </div>
       </div>
     </footer>

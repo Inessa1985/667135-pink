@@ -12,12 +12,39 @@
     font-family: @font-family-main;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 550;
+    font-weight: 400;
     color: @color-pink;
     text-align: center;
     text-transform: uppercase;
     width: auto;
     white-space: normal;
     display: table;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0 58px;
+    padding-bottom: 48px;
+    width: 616px;
+    position: relative;
+    background-color: @background-color-main;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    order: 3;
+  }
+
+  .progress__legend {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .progress {
+    padding-bottom: 0;
+    width: 940px;
+    height: 242px;
   }
 }

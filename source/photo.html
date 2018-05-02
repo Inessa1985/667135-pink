@@ -45,7 +45,7 @@
                   <picture>
                     <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                     <source media="(min-width: 620px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                    <img class="author-picture__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото от Анны">
+                    <img class="author-picture__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото от Анны">
                   </picture>
               </p>
               <ul class="photo-gallery__caption author-caption author-caption--panorama plain-list">
@@ -199,7 +199,7 @@
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 620px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-              <img class="author-picture__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Новое фото пользователя для поста">
+              <img class="author-portrait__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Новое фото пользователя для поста">
             </picture>
           </p>
           <div class="photo-post__wrapper">
@@ -249,21 +249,27 @@
           <b class="visually-hidden">Мы в соцсетях!</b>
           <ul class="social__list plain-list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">twitter</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">facebook</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">youtube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+                <span class="visually-hidden">youtube</span>
+              </a>
             </li>
           </ul>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="35" alt="Логотип HTML">
-            </a>
-          </div>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML">
+          </a>
         </div>
       </div>
     </footer>

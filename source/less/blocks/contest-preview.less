@@ -1,6 +1,6 @@
 .contest-preview {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   font-family: @font-family-main;
   width: auto;
   height: 237px;
@@ -8,9 +8,10 @@
   display: flex;
   align-items: center;
   background-color: @background-color-dark;
-  background-image: url("../img/back-mobile-form.jpg");
+  background-image: url("../img/bg-back-mobile@2x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 
   &__text {
     margin: 0 auto;
@@ -23,5 +24,51 @@
     text-align: center;
     width: auto;
     height: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contest-preview {
+    width: auto;
+    height: 440px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: @background-color-dark;
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contest-preview__text {
+    margin: 0 75px;
+    font-family: @font-family-main;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contest-preview {
+    padding: 0 130px;
+    width: auto;
+    height: 394px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: @background-color-dark;
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contest-preview__text {
+    margin: 0 100px;
+    font-family: @font-family-main;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
   }
 }
