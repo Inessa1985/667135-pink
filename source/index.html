@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: PINK</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header centered-block">
-        <a class="page-header__logo">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
           <picture class="page-header__logo-picture">
-            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg" width="147" height="40">
-            <source media="(min-width: 620px)" srcset="img/logotype-white-tablet.svg" width="147" height="40">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «ПИНК»">
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" alt="Логотип «ПИНК»" width="75" height="22">
           </picture>
         </a>
         <nav class="site-list">
@@ -33,6 +35,7 @@
             </ul>
           </div>
         </nav>
+      </div>
     </header>
     <main class="page-main centered-block">
       <h1 class="visually-hidden">Главная страница приложения "ПИНК"</h1>
@@ -71,14 +74,24 @@
           </li>
         </ul>
         <ul class="advantages__list plain-list">
+          <li class="advantages__item advantages__item--vh">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-desktop@1x.png 1x, img/iphone-screen-desktop@1x.png 2x">
+              <img class="advantages__img" alt="Фото Iphone ч/б">
+            </picture>
+          </li>
+          <li class="advantages__item advantages__item--vh">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-desktop@1x.png 1x, img/iphone-screen-desktop@1x.png 2x">
+              <img class="advantages__img" alt="Фото Iphone без смайлика">
+            </picture>
+          </li>
           <li class="advantages__item">
-              <img class="advantages__img advantages__img--1" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото Iphone ч/б">
-          </li>
-          <li class="advantages__item advantages__item--vh">
-            <img class="advantages__img" src="img/iphone-screen-desktop@1x.png" width="186" height="382" alt="Фото Iphone без смайлика">
-          </li>
-          <li class="advantages__item advantages__item--vh">
-            <img class="advantages__img" src="img/iphone-screen-desktop@1x.png" width="186" height="382" alt="Фото Iphone со смайликом">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-desktop@1x.png 1x, img/iphone-screen-desktop@1x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@1x.png 2x">
+              <img class="advantages__img advantages__img--1" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+            </picture>
           </li>
         </ul>
       </section>
@@ -150,6 +163,7 @@
               <p class="cost-menu__feature cost-menu__feature--yes">Комментарии</p>
             </li>
           </ul>
+        </div>
       </section>
       <section class="application-toggles slider">
           <button class="slider__toggle" type="button"></button>
