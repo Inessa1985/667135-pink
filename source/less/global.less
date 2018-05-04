@@ -7,6 +7,7 @@ body {
   font-weight: normal;
   color: @color-main;
   min-width: 320px;
+  overflow-x: hidden;
   /*background-color: @background-color-main;*/
   background-color: #d8c7b2;
 }
@@ -26,7 +27,7 @@ fieldset {
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src:
     local("OpenSans"),
     url("../fonts/opensans.woff2") format("woff2"),
@@ -36,9 +37,9 @@ fieldset {
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   src:
-    local("OpenSans-bold"),
+    local("OpenSans"),
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
 }
@@ -46,9 +47,9 @@ fieldset {
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
+  font-weight: lighter;
   src:
-    local("OpenSans-light"),
+    local("OpenSans"),
     url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
 }

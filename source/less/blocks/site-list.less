@@ -3,7 +3,7 @@
   padding: 0;
   font-family: @font-family-main;
   width: 320px;
-  background-color: inherit;
+  background-color: @background-color-dark-second;
   /*border: 1px solid red;*/
 }
 
@@ -19,17 +19,21 @@
 
 .site-list__toggle {
   margin: 0;
-  padding: 0;
-  border: 1px solid pink;
-  width: 50px;
-  height: 24px;
+  padding: 0 20px;
+  width: 100%;
+  height: 64px;
+  font-weight: lighter;
+  color: @color-white;
   background-color: transparent;
   background-image: url("../img/menu-burger.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 250px center;
   background-size: auto;
   display: block;
-  align-self: flex-end;
+  text-align: right;
+  border: none;
+  border-bottom: 1px solid #000000;
+  box-sizing: border-box;
 }
 
 .site-list__items {
@@ -43,30 +47,42 @@
 .site-list__item {
   margin: 0 auto;
   padding: 20px 0;
+  /*width: 320px;*/
+  width: 100%;
+  height: 64px;
   font-family: @font-family-main;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
   color: @color-white;
-  width: 320px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .site-list {
     margin: 0;
-    width: 470px;
-    display: flex;
+    width: 100%;
   }
 
   .site-list__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 470px;
+    /*width: 470px;*/
+    width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  .site-list__toggle {
+    height: 110px;
+    background-color: transparent;
+    background-image: url("../img/menu-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 590px center;
+    background-size: auto;
   }
 
   .site-list__items {
@@ -110,5 +126,6 @@
 
   .site-list__item {
     background-color: transparent;
+    border: none;
   }
 }
