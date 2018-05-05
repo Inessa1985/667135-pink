@@ -51,3 +51,27 @@
     justify-content: flex-start;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .author-caption {
+    width: 300px;
+  }
+
+  .author-caption--panorama {
+    margin: 0 auto;
+    padding: 0;
+    width: 620px;
+    position: relative;
+    background-color: @background-color-second;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .author-caption--panorama {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+    position: relative;
+    background-color: @background-color-second;
+  }
+}

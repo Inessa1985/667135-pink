@@ -1,4 +1,50 @@
 .list-map {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+}
+
+.list-map__image {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 320px;
+  height: 200px;
+  background-color: #e9ddbf;
+  background-image: url("../img/bg-map-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .list-map__image {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 660px;
+    height: 848px;
+    background-color: #e9ddbf;
+    background-image: url("../img/map-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-map__image {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 960px;
+    height: 522px;
+    background-color: #e9ddbf;
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }

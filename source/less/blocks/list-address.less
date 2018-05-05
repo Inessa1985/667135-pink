@@ -6,6 +6,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  z-index: 11;
 }
 
 .list-address__text {
@@ -30,4 +31,12 @@
   width: auto;
   height: auto;
   background-color: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .list-address {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 310px;
+  }
 }

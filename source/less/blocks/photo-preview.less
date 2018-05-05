@@ -1,14 +1,13 @@
 .photo-preview {
   margin: 0 auto;
   padding: 0;
-  font-family: @font-family-main;
   width: auto;
   height: 237px;
   position: relative;
   display: flex;
   align-items: center;
   background-color: @background-color-dark;
-  background-image: url("../img/back-mobile-form.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
@@ -23,5 +22,40 @@
     text-align: center;
     width: auto;
     height: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-preview {
+    width: auto;
+    height: 440px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: @background-color-dark;
+    background-image: url("../img/back-tablet-form.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .photo-preview__text {
+    font-family: @font-family-main;
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .photo-preview {
+    width: auto;
+    height: 395px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: @background-color-dark;
+    background-image: url("../img/back-desktop-form.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

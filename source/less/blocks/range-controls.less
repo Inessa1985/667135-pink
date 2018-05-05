@@ -6,3 +6,31 @@
     width: 240px;
   }
 }
+
+.range-controls__item--vh {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .range-controls {
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .range-controls__input {
+    width: 202px;
+    height: 22px;
+  }
+
+  .range-controls__item--vh {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-controls__input {
+    width: 288px;
+  }
+}

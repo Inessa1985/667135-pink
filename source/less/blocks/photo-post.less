@@ -17,6 +17,11 @@
     padding: 0;
   }
 
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0;
+  }
+
   &__change {
     margin: 0 auto;
     padding: 0;
@@ -49,7 +54,7 @@
     height: auto;
     background-color: @background-color-second;
     border: 2px solid @color-pink;
-    border-radius: 30;
+    border-radius: 30px;
     cursor: pointer;
   }
 
@@ -66,7 +71,97 @@
     width: 280px;
     background-color: @background-color-second;
     border: 2px solid #dddfe0;
-    border-radius: 30;
+    border-radius: 30px;
     cursor: pointer;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-post__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-post__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-post__change {
+    margin: 0;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-post__range-controls {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .photo-post__user-button {
+    margin: 0;
+    margin-left: 45px;
+    width: 275px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .photo-post__button-on {
+    margin: 0;
+    margin-bottom: 24px;
+    width: 260px;
+  }
+
+  .photo-post__button-off {
+    margin: 0;
+    width: 260px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-post {
+    background-color: @background-color-main;
+  }
+
+  .photo-post__form {
+    margin: 0 10px;
+    padding: 57px 0;
+    padding-left: 80px;
+    padding-right: 54px;
+    background-color: @background-color-second;
+  }
+
+  .photo-post__change {
+    margin: 0;
+    margin-left: 90px;
+  }
+
+  .photo-post__user-button {
+    margin: 0;
+    margin-left: 90px;
+    width: 410px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .photo-post__button-on {
+    margin: 0;
+    /*margin-bottom: 24px;*/
+    width: 183px;
+    height: 55px;
+    box-sizing: border-box;
+  }
+
+  .photo-post__button-off {
+    margin: 0;
+    width: 183px;
+    height: 55px;
+    box-sizing: border-box;
   }
 }
