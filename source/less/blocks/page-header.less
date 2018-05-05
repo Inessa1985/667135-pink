@@ -3,8 +3,8 @@
   margin: 0 auto;
   padding: 0;
   font-size: 22px;
-  font-weight: 700;
-  width: 100%;
+  font-weight: bold;
+  max-width: 320px;
   color: @color-white;
   text-transform: uppercase;
   display: flex;
@@ -16,6 +16,7 @@
 
 .page-header__wrapper {
   margin: 0 auto;
+  padding: 0;
   /*padding: 0 20px;*/
 }
 
@@ -53,12 +54,8 @@
   .page-header {
     margin: 0 auto;
     padding: 0;
-    /*max-width: 660px;*/
+    max-width: 660px;
     min-height: 110px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
   }
 
@@ -83,22 +80,26 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    position: absolute;
     margin: 0 auto;
-    padding: 0 130px;
+    margin-bottom: -110px;
+    padding: 0;
+    max-width: 960px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .page-header__wrapper {
+    height: 110px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   .page-header__logo {
     position: relative;
-    margin-top: -20px;
+    margin-top: -10px;
     width: 147px;
     height: 40px;
   }
