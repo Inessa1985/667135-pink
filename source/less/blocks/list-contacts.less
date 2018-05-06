@@ -23,15 +23,17 @@
 }
 
 .list-contacts__link {
+  margin-top: 5px;
   font-family: @font-family-main;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 200;
+  font-weight: 300;
   color: @color-pink;
   text-align: center;
   width: auto;
   height: auto;
   background-color: inherit;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -39,5 +41,24 @@
     margin: 0;
     margin-bottom: 40px;
     width: 310px;
+  }
+
+  .list-contacts__link {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-contacts {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .list-contacts__text {
+    margin: 0;
+  }
+
+  .list-contacts__link {
+    margin-top: 25px;
   }
 }

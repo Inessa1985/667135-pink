@@ -125,6 +125,18 @@
   }
 }
 
+.cost-menu__feature--yes {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+.cost-menu__feature--no {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
 @media (min-width: @tablet-width) {
   .cost-menu {
     padding-bottom: 65px;
@@ -160,7 +172,7 @@
     top: 0;
     margin-left: -39px;
     padding-top: 7px;
-    padding-left: 40px;
+    padding-left: 44px;
   }
 
   .cost-menu__hit::after {
@@ -168,6 +180,8 @@
   }
 
   .cost-menu__title {
+    margin-top: -7px;
+    margin-bottom: -3px;
     font-size: 16px;
     line-height: 30px;
     font-weight: bold;
@@ -197,6 +211,18 @@
     height: 45px;
   }
 
+  .cost-menu__feature--yes {
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .cost-menu__feature--no {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
   .cost-menu__vh {
     display: none;
   }
@@ -206,7 +232,7 @@
 @media (min-width: @desktop-width) {
   .cost-menu {
     padding-top: 149px;
-    padding-bottom: 95px;
+    padding-bottom: 96px;
   }
 
   .cost-menu__wrapper {
@@ -253,11 +279,19 @@
     height: auto;
   }
 
+  .cost-menu__title--std {
+    margin-left: -6px;
+  }
+
   .cost-menu__price {
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
     width: auto;
     height: auto;
+  }
+
+  .cost-menu__price--std {
+    margin-left: -6px;
   }
 }

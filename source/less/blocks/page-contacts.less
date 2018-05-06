@@ -44,9 +44,9 @@
     padding: 0;
     padding-top: 15px;
     padding-bottom: 30px;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 52px;
-    font-weight: lighter;
+    font-weight: 300;
   }
 
   .page-contacts__wrapper {
@@ -63,7 +63,22 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-contacts {
+    padding-top: 53px;
+  }
+
   .page-contacts__wrapper {
     padding: 0 10px;
+  }
+
+  .page-contacts__title {
+    padding-bottom: 55px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-contacts__list {
+    width: 310px;
+    margin-bottom: 40px;
   }
 }
