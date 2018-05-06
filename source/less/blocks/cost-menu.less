@@ -113,7 +113,7 @@
   font-weight: normal;
   color: @color-main;
   width: 280px;
-  height: 60px;
+  height: 61px;
   vertical-align: middle;
   box-sizing: border-box;
   border-left: 2px solid #e5e5e5;
@@ -139,7 +139,8 @@
 
 @media (min-width: @tablet-width) {
   .cost-menu {
-    padding-bottom: 65px;
+    padding-top: 88px;
+    padding-bottom: 75px;
   }
 
   .cost-menu__wrapper {
@@ -158,7 +159,7 @@
 
   .cost-menu__header {
     width: 154px;
-    height: 98px;
+    height: 79px;
   }
 
   .cost-menu__header--light {
@@ -170,18 +171,23 @@
 
   .cost-menu__hit::before {
     top: 0;
-    margin-left: -39px;
-    padding-top: 7px;
-    padding-left: 44px;
+    margin-left: -49px;
+    padding-top: 1px;
+    padding-left: 58px;
   }
 
   .cost-menu__hit::after {
-    margin-left: -39px;
+    margin-left: -49px;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg"); //переподключить картинку для планшета
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .cost-menu__title {
-    margin-top: -7px;
-    margin-bottom: -3px;
+    margin-top: -3px;
+    margin-bottom: -8px;
     font-size: 16px;
     line-height: 30px;
     font-weight: bold;
@@ -190,7 +196,7 @@
   }
 
   .cost-menu__title--std {
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .cost-menu__price {
@@ -202,11 +208,12 @@
   }
 
   .cost-menu__price--std {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   .cost-menu__feature {
     padding-top: 9px;
+    padding-left: 15px;
     width: 155px;
     height: 45px;
   }
@@ -256,6 +263,11 @@
 
   .cost-menu__hit::after {
     margin-left: -80px;
+    width: 72px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .cost-menu__feature,
@@ -272,6 +284,8 @@
   }
 
   .cost-menu__title {
+    margin-top: -7px;
+    margin-bottom: -3px;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;

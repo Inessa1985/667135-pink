@@ -1,30 +1,41 @@
 .slider {
   margin: 0 auto;
   padding: 40px 0;
-  width: 100%;
+  width: 62px;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: inherit;
 }
 
 .slider__toggle {
-  margin: 0;
-  margin-right: 12px;
-  padding: 0;
-  width: 12px;
-  height: 12px;
-  display: block;
-  background-image: url("../img/icon-editor-diagram-fill.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-  background-color: inherit;
-  border: none;
+  width: 6px;
+  height: 6px;
+  background-color: #b5b9be;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: @color-white;
+  margin-right: 13px;
   cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
+.slider__toggle--active {
+  border-color: @color-main;
+  background-color: #f2f2f2;
+}
+
+
+@media (min-width: @tablet-width) {
+  .slider {
+    padding-bottom: 22px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .slider--vh {
