@@ -1,10 +1,17 @@
 .range-controls {
   margin: 0 auto;
   padding: 0;
+}
 
-  &__input {
-    width: 240px;
-  }
+.range-controls__input {
+  width: 240px;
+}
+
+.range-controls__item {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 33px;
 }
 
 .range-controls__item--vh {
@@ -14,14 +21,51 @@
 @media (min-width: @tablet-width) {
   .range-controls {
     margin: 0;
-    margin-left: 20px;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
 
+  .range-controls__item {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    width: 221px;
+    box-sizing: border-box;
+  }
+
+  .range-controls__item--crop {
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+    height: 55px;
+    /*border-top: 1px solid #dddfe0;*/
+    box-sizing: border-box;
+  }
+
+  .range-controls__item--fill {
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+    padding-top: 24px;
+    height: 73px;
+    border-top: 1px solid #dddfe0;
+    box-sizing: border-box;
+  }
+
+  .range-controls__item--contrast {
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+    padding-top: 22px;
+    height: 72px;
+    border-top: 1px solid #dddfe0;
+    box-sizing: border-box;
+  }
+
   .range-controls__input {
     width: 202px;
-    height: 22px;
+    height: 2px;
   }
 
   .range-controls__item--vh {
@@ -30,6 +74,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .range-controls__item {
+    margin: 0;
+    padding-right: 30px;
+    width: 318px;
+    box-sizing: border-box;
+  }
+
+  .range-controls__item--fill {
+    height: 71px;
+  }
+
   .range-controls__input {
     width: 288px;
   }

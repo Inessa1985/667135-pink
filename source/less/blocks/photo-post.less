@@ -1,6 +1,7 @@
 .photo-post {
   margin: 0 auto;
   padding: 20px 0;
+  padding-bottom: 39px;
   width: auto;
   position: relative;
   background-color: @background-color-second;
@@ -14,6 +15,7 @@
   &__picture {
     margin: 0 auto;
     margin-left: 20px;
+    margin-bottom: 39px;
     padding: 0;
   }
 
@@ -42,7 +44,7 @@
 
   &__button-on {
     margin: 0;
-    margin-top: 38px;
+    margin-top: 36px;
     margin-left: 20px;
     padding: 15px 0;
     font-family: @font-family-main;
@@ -50,7 +52,7 @@
     line-height: 24px;
     font-weight: bold;
     color: @color-pink;
-    width: 280px;
+    width: 278px;
     height: auto;
     background-color: @background-color-second;
     border: 2px solid @color-pink;
@@ -68,7 +70,7 @@
     line-height: 24px;
     font-weight: bold;
     color: #dddfe0;
-    width: 280px;
+    width: 278px;
     background-color: @background-color-second;
     border: 2px solid #dddfe0;
     border-radius: 30px;
@@ -77,6 +79,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo-post {
+    margin: 0 auto;
+    padding: 58px 0;
+    padding-bottom: 11px;
+  }
+
   .photo-post__form {
     display: flex;
     justify-content: space-between;
@@ -85,24 +93,33 @@
   .photo-post__wrapper {
     display: flex;
     flex-wrap: wrap;
+    height: 400px;
   }
 
   .photo-post__change {
     margin: 0;
     margin-left: 45px;
+    height: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
   }
 
   .photo-post__range-controls {
     margin: 0;
-    margin-left: 20px;
+    padding: 0;
+    height: 200px;
   }
 
   .photo-post__user-button {
     margin: 0;
+    padding: 0;
     margin-left: 45px;
+    margin-top: -2px;
     width: 275px;
+    height: 202px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -111,7 +128,7 @@
 
   .photo-post__button-on {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
     width: 260px;
   }
 
@@ -123,6 +140,8 @@
 
 @media (min-width: @desktop-width) {
   .photo-post {
+    padding: 0;
+    padding-bottom: 28px;
     background-color: @background-color-main;
   }
 
@@ -131,6 +150,7 @@
     padding: 57px 0;
     padding-left: 80px;
     padding-right: 54px;
+    padding-bottom: 55px;
     background-color: @background-color-second;
   }
 
@@ -141,6 +161,7 @@
 
   .photo-post__user-button {
     margin: 0;
+    margin-top: -2px;
     margin-left: 90px;
     width: 410px;
     box-sizing: border-box;
@@ -152,16 +173,22 @@
 
   .photo-post__button-on {
     margin: 0;
+    padding: 0;
     /*margin-bottom: 24px;*/
     width: 183px;
     height: 55px;
     box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
   }
 
   .photo-post__button-off {
     margin: 0;
+    padding: 0;
     width: 183px;
     height: 55px;
     box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
   }
 }
