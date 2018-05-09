@@ -1,9 +1,9 @@
 .user-emotion {
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 40px;
-  margin-left: 20px;
   padding: 0;
+  padding-top: 32px;
+  padding-bottom: 35px;
+  padding-left: 20px;
   font-family: @font-family-main;
   width: auto;
   position: relative;
@@ -22,8 +22,10 @@
   */
 
   &__label {
-    margin: 0 auto;
+    margin: 0;
     padding: 10px 0;
+    padding-top: 32px;
+    padding-bottom: 0;
     font-family: @font-family-main;
     font-size: 14px;
     line-height: 30px;
@@ -35,16 +37,20 @@
 
   &__input {
     margin: 0 auto;
+    margin-top: -20px;
     padding: 0;
-    padding-top: 22px;
+    padding-top: 15px;
+    padding-left: 18px;
     font-family: @font-family-main;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     color: @color-main;
-    width: 276px;
-    text-align: center;
+    width: 280px;
+    min-height: 201px;
+    text-align: start;
     border: 2px solid #e5e5e5;
+    box-sizing: border-box;
   }
 }
 

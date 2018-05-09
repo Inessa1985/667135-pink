@@ -17,23 +17,21 @@
           </picture>
         </a>
         <nav class="site-list">
-          <div class="site-list__wrapper">
-            <button class="site-list__toggle" type="button">Меню</button>
+            <button class="site-list__toggle site-list__toggle--btn" type="button">Меню</button>
             <ul class="site-list__items plain-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html">Главная</a>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="site-list__link" href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Конкурс</a>
+                <a class="site-list__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -42,7 +40,7 @@
         <h1 class="contest-preview__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
       <section class="contest-story">
-        <p class="contest-story__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        <p class="contest-story__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="contest-story__text-vh">Пожалуйста, заполните форму ниже:</span>
         </p>
       </section>
@@ -71,31 +69,43 @@
             </ul>
           </fieldset>
           <fieldset class="progress">
-            <legend class="progress__legend">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="progress__legend">Ваши безбашенные достижения&nbsp;в путешествии</legend>
             <ul class="progress-list plain-list">
               <li class="progress-list__item">
-                <input class="progress-list__input" type="checkbox" name="selfie" id="selfie" checked>
-                <label class="progress-list__label" for="selfie">Сделал селфи с акулой</label>
+                <label class="progress-list__label" for="selfie">
+                  <input class="progress-list__input" type="checkbox" name="selfie" id="selfie" checked>
+                  Сделал селфи с акулой
+                </label>
               </li>
               <li class="progress-list__item">
-                <input class="progress-list__input" type="checkbox" name="burnt-beach" id="burnt-beach" checked>
-                <label class="progress-list__label" for="burnt-beach">Обгорел на пляже</label>
+                <label class="progress-list__label" for="burnt-beach">
+                  <input class="progress-list__input" type="checkbox" name="burnt-beach" id="burnt-beach" checked>
+                  Обгорел на пляже
+                </label>
               </li>
               <li class="progress-list__item">
-                <input class="progress-list__input" type="checkbox" name="saw-ChuckNorris" id="saw-ChuckNorris">
-                <label class="progress-list__label" for="saw-ChuckNorris">Видел Чака Норриса</label>
+                <label class="progress-list__label" for="saw-ChuckNorris">
+                  <input class="progress-list__input" type="checkbox" name="saw-ChuckNorris" id="saw-ChuckNorris">
+                  Видел Чака Норриса
+                </label>
               </li>
               <li class="progress-list__item">
-                <input class="progress-list__input" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
-                <label class="progress-list__label" for="buy-souvenirs">Накупил сувениров</label>
+                <label class="progress-list__label" for="buy-souvenirs">
+                  <input class="progress-list__input" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
+                  Накупил сувениров
+                </label>
               </li>
               <li class="progress-list__item">
-                <input class="progress-list__input" type="checkbox" name="kept-tower" id="kept-tower" checked>
-                <label class="progress-list__label" for="kept-tower">Удержал башню</label>
+                <label class="progress-list__label" for="kept-tower">
+                  <input class="progress-list__input" type="checkbox" name="kept-tower" id="kept-tower" checked>
+                  Удержал башню
+                </label>
               </li>
               <li class="progress-list__item">
-                <input class="progress-list__input" type="checkbox" name="defeated-hotel" id="defeated-hotel">
-                <label class="progress-list__label" for="defeated-hotel">Разгромил отель</label>
+                <label class="progress-list__label" for="defeated-hotel">
+                  <input class="progress-list__input" type="checkbox" name="defeated-hotel" id="defeated-hotel">
+                  Разгромил отель
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -116,16 +126,22 @@
             <legend class="interview__legend">С каким приложением путешествовали?</legend>
             <ul class="interview-list plain-list">
               <li class="interview-list__item">
-                <input class="interview-list__input" type="radio" name="pink-ios" id="pink-ios" checked>
-                <label class="interview-list__label" for="pink-ios">Pink для iOS</label>
+                <label class="interview-list__label" for="pink-ios">
+                  <input class="interview-list__input" type="radio" name="pink-ios" id="pink-ios" checked>
+                  Pink для iOS
+                </label>
               </li>
               <li class="interview-list__item">
-                <input class="interview-list__input" type="radio" name="pink-android" id="pink-android">
-                <label class="interview-list__label" for="pink-android">Pink на Android</label>
+                <label class="interview-list__label" for="pink-android">
+                  <input class="interview-list__input" type="radio" name="pink-android" id="pink-android">
+                  Pink на Android
+                </label>
               </li>
               <li class="interview-list__item">
-                <input class="interview-list__input" type="radio" name="windows-phone" id="windows-phone">
-                <label class="interview-list__label" for="windows-phone">Windows Phone</label>
+                <label class="interview-list__label" for="windows-phone">
+                  <input class="interview-list__input" type="radio" name="windows-phone" id="windows-phone">
+                  Windows Phone
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -137,7 +153,8 @@
             <input class="user-button__input" type="submit" value="Отправить форму">
           </div>
           <small class="contest-form__fields-required">
-            <sup class="contest-form__fields-badge">*</sup> — обязательные поля
+            <sup class="contest-form__fields-badge">*</sup>
+            <div> — обязательные поля</div>
           </small>
         </form>
       </section>
