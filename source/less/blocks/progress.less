@@ -55,10 +55,10 @@
 @media (min-width: @tablet-width) {
   .progress {
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 58px;
     padding: 0 58px;
-    padding-bottom: 48px;
-    width: 616px;
+    padding-bottom: 5px;
+    width: 620px;
     position: relative;
     background-color: @background-color-main;
     box-sizing: border-box;
@@ -66,8 +66,22 @@
     order: 3;
   }
 
+  .progress .progress-list {
+    padding: 0;
+  }
+
+  .progress .progress-list__item {
+    margin-bottom: 42px;
+  }
+
   .progress__legend {
     padding: 0 30px;
+    width: 437px;
+    background-color: @background-color-main;
+  }
+
+  .progress .progress-list__input {
+    margin-right: 21px;
   }
 }
 
