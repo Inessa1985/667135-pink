@@ -1,5 +1,7 @@
 .button-fill {
   margin: 0;
+  margin-top: 3px;
+  margin-left: 34px;
   padding: 0;
   width: 48px;
   height: 43px;
@@ -8,15 +10,42 @@
   cursor: pointer;
 }
 
-/*
-.button-fill__icon {
-  width: 48px;
-  height: 43px;
-  background-image: url("../img/icon-editor-fill.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: block;
-  color: @color-main;
+@media (min-width: @tablet-width) {
+  .button-fill {
+    margin: 0;
+    padding: 0;
+    padding-left: 3px;
+    padding-right: 28px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    width: 55px;
+    height: 72px;
+    border-top: 1px solid #dddfe0;
+    box-sizing: border-box;
+  }
+
+  .button-fill__icon {
+    width: 24px;
+    height: 22px;
+    fill: @color-pink;
+  }
 }
-*/
+
+@media (min-width: @desktop-width) {
+  .button-fill {
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 44px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    width: 92px;
+    height: 72px;
+  }
+
+  .button-fill__icon {
+    margin: 0;
+    width: 48px;
+    height: 43px;
+  }
+}

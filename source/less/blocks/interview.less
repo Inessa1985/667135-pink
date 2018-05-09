@@ -1,6 +1,6 @@
 .interview {
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0;
   width: auto;
   position: relative;
   background-color: @background-color-second;
@@ -8,8 +8,9 @@
 
 .interview__legend {
   margin: 0 auto;
-  margin-left: 20px;
-  padding: 0;
+  padding: 40px;
+  padding-top: 38px;
+  padding-bottom: 36px;
   font-family: @font-family-main;
   font-size: 14px;
   line-height: 18px;
@@ -17,14 +18,17 @@
   color: @color-pink;
   text-align: center;
   text-transform: uppercase;
-  width: auto;
+  width: 320px;
   white-space: normal;
   display: table;
+  background-color: @background-color-second;
 }
 
 @media (min-width: @tablet-width) {
   .interview {
-    padding: 40px 40px;
+    padding: 40px 0;
+    padding-bottom: 20px;
+    margin-top: 11px;
     width: 616px;
     background-color: @background-color-main;
     box-sizing: border-box;
@@ -33,9 +37,10 @@
   }
 
   .interview__legend {
-    margin: 0 auto;
-    margin-left: 107px;
+    margin: 0;
     padding: 0 23px;
+    width: 380px;
+    background-color: @background-color-main;
   }
 }
 
@@ -43,16 +48,16 @@
   .interview {
     margin: 0;
     padding: 0;
-    padding-bottom: 0;
-    width: 431px;
-    height: 297px;
+    padding-bottom: 20px;
+    width: 435px;
+    height: 309px;
     box-sizing: border-box;
     display: block;
   }
 
   .interview__legend {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     padding: 0 20px;
     display: table;
     max-width: 100%;

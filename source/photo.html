@@ -17,23 +17,21 @@
           </picture>
         </a>
         <nav class="site-list">
-          <div class="site-list__wrapper">
-            <button class="site-list__toggle" type="button">Меню</button>
+            <button class="site-list__toggle site-list__toggle--btn" type="button">Меню</button>
             <ul class="site-list__items plain-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html">Главная</a>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="site-list__link" href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Конкурс</a>
+                <a class="site-list__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -42,154 +40,148 @@
         <h1 class="photo-preview__text">Фотографии<br>пользователей</h1>
       </section>
       <section class="photo-title">
-        <p class="photo-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="photo-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как не хватает ваших?</p>
       </section>
       <section class="photo-gallery">
-            <blockquote class="photo-gallery__item">
-              <p class="photo-gallery__picture author-picture">
+            <blockquote class="photo-gallery__item photo-gallery__item--panorama">
+              <a class="photo-gallery__picture author-picture" href="#">
                   <span class="author-picture__status">Панорама дня</span>
                   <picture>
                     <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                     <img class="author-picture__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото от Анны">
                   </picture>
-              </p>
+              </a>
               <ul class="photo-gallery__caption author-caption author-caption--panorama plain-list">
                   <li class="author-caption__name">
                     <b class="author-caption__nickname">Анна</b>
                     <time class="author-caption__date" datetime="16:10">(5 минут назад)</time>
                   </li>
-                  <li class="author-caption__text"><p class="author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p></li>
-                  <li class="author-caption__likes likes">
+                  <li class="author-caption__text"><p class="author-caption__txt">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p></li>
+                  <li class="author-caption__likes likes likes--panorama">
                     <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                    <div class="likes__number">Нравится:215</div>
+                    <div class="likes__number">Нравится: 215</div>
                   </li>
               </ul>
             </blockquote>
           <div class="photo-gallery__list">
             <blockquote class="photo-gallery__item">
-                <p class="photo-gallery__picture author-picture">
+                <a class="photo-gallery__picture author-picture" href="#">
                   <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                     <img class="author-picture__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото от Левона">
                   </picture>
-                </p>
+                </a>
                 <ul class="photo-gallery__caption author-caption plain-list">
                     <li class="author-caption__name">
                       <b class="author-caption__nickname">Левон</b>
                       <time class="author-caption__date" datetime="11:00">(5 часов назад)</time>
                     </li>
-                    <li class="author-caption__text"><p class="author-text">Вчера он на луну летал, сегодня в руки к нам попал.</p></li>
+                    <li class="author-caption__text"><p class="author-caption__txt">Вчера он на луну летал, сегодня в руки к нам попал.</p></li>
                     <li class="author-caption__likes likes">
                       <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                      <div class="likes__number">Нравится:356</div>
+                      <div class="likes__number">Нравится: 356</div>
                     </li>
                 </ul>
             </blockquote>
             <blockquote class="photo-gallery__item">
-                <p class="photo-gallery__picture author-picture">
+                <a class="photo-gallery__picture author-picture" href="#">
                   <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                     <img class="author-picture__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото от Антона">
                   </picture>
-                </p>
+                </a>
                 <ul class="photo-gallery__caption author-caption plain-list">
                     <li class="author-caption__name">
                       <b class="author-caption__nickname">Антон</b>
                       <time class="author-caption__date" datetime="04:00">(12 часов назад)</time>
                     </li>
-                    <li class="author-caption__text"><p class="author-text">Соседи будут рады!</p></li>
+                    <li class="author-caption__text"><p class="author-caption__txt">Соседи будут рады!</p></li>
                     <li class="author-caption__likes likes">
                       <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                      <div class="likes__number">Нравится:666</div>
+                      <div class="likes__number">Нравится: 666</div>
                     </li>
                 </ul>
             </blockquote>
             <blockquote class="photo-gallery__item">
-                  <p class="photo-gallery__picture author-picture">
+                  <a class="photo-gallery__picture author-picture" href="#">
                       <picture>
                         <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                         <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                         <img class="author-picture__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото от Бориса">
                       </picture>
-                  </p>
+                  </a>
                   <ul class="photo-gallery__caption author-caption plain-list">
                       <li class="author-caption__name">
                         <b class="author-caption__nickname">Борис</b>
                         <time class="author-caption__date" datetime="20:00">(20 часов назад)</time>
                       </li>
-                      <li class="author-caption__text"><p class="author-text">Здесь могла быть ваша цитата о высоком и вечном.</p></li>
+                      <li class="author-caption__text"><p class="author-caption__txt">Здесь могла быть ваша цитата о высоком и вечном.</p></li>
                       <li class="author-caption__likes likes">
                         <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                        <div class="likes__number">Нравится:215</div>
+                        <div class="likes__number">Нравится: 215</div>
                       </li>
                   </ul>
             </blockquote>
             <blockquote class="photo-gallery__item">
-                  <p class="photo-gallery__picture author-picture">
+                  <a class="photo-gallery__picture author-picture" href="#">
                     <picture>
                       <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                       <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                       <img class="author-picture__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото от Сергея">
                     </picture>
-                  </p>
+                  </a>
                   <ul class="photo-gallery__caption author-caption plain-list">
                       <li class="author-caption__name">
                         <b class="author-caption__nickname">Сергей</b>
                         <time class="author-caption__date" datetime="2018-04-14">(25 часов назад)</time>
                       </li>
-                      <li class="author-caption__text"><p class="author-text">Самая кубанская в мире!</p></li>
+                      <li class="author-caption__text"><p class="author-caption__txt">Самая кубанская в мире!</p></li>
                       <li class="author-caption__likes likes">
                         <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                        <div class="likes__number">Нравится:4</div>
+                        <div class="likes__number">Нравится: 4</div>
                       </li>
                   </ul>
             </blockquote>
             <blockquote class="photo-gallery__item">
-                    <p class="photo-gallery__picture author-picture">
+                    <a class="photo-gallery__picture author-picture" href="#">
                       <picture>
                         <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                         <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                         <img class="author-picture__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото от Максима">
                       </picture>
-                      <!--
-                        <img class="author-picture__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от Максима">
-                      -->
-                    </p>
+                    </a>
                     <ul class="photo-gallery__caption author-caption plain-list">
                         <li class="author-caption__name">
                           <b class="author-caption__nickname">Максим</b>
                           <time class="author-caption__date" datetime="2018-04-13">(40 часов назад)</time>
                         </li>
-                        <li class="author-caption__text"><p class="author-text">Где снег-то?</p></li>
+                        <li class="author-caption__text"><p class="author-caption__txt">Где снег-то?</p></li>
                         <li class="author-caption__likes likes">
                           <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                          <div class="likes__number">Нравится:150</div>
+                          <div class="likes__number">Нравится: 150</div>
                         </li>
                     </ul>
             </blockquote>
             <blockquote class="photo-gallery__item">
-                    <p class="photo-gallery__picture author-picture">
+                    <a class="photo-gallery__picture author-picture" href="#">
                       <picture>
                         <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                         <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                         <img class="author-picture__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото от Надежды">
                       </picture>
-                      <!--
-                        <img class="author-picture__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от Надежды">
-                      -->
-                    </p>
+                    </a>
                     <ul class="photo-gallery__caption author-caption plain-list">
                         <li class="author-caption__name">
                           <b class="author-caption__nickname">Надежда</b>
                           <time class="author-caption__date" datetime="2018-04-13">(45 часов назад)</time>
                         </li>
-                        <li class="author-caption__text"><p class="author-text">Всем GM и взаимные лайки!</p></li>
+                        <li class="author-caption__text"><p class="author-caption__txt">Всем GM и взаимные лайки!</p></li>
                         <li class="author-caption__likes likes">
                           <button class="likes__logo-heart" type="button" aria-label="Логотип Сердце"></button>
-                          <div class="likes__number">Нравится:2560</div>
+                          <div class="likes__number">Нравится: 2560</div>
                         </li>
                     </ul>
             </blockquote>
@@ -211,29 +203,39 @@
           <div class="photo-post__wrapper">
             <div class="photo-post__change">
               <button class="photo-post__change-button button-crop" type="button" aria-label="Обрезать">
-                <img class="photo-post__change-icon button-crop__icon" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать">
+                <svg class="photo-post__change-icon button-crop__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" fill="#d22856">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
               </button>
               <button class="photo-post__change-button button-fill" type="button" aria-label="Насыщенность">
-                <img class="photo-post__change-icon button-fill__icon" src="img/icon-editor-fill.svg" width="48" height="43" alt="Насыщенность">
+                <svg class="photo-post__change-icon button-fill__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="43px" viewBox="0 0 48 43" enable-background="new 0 0 48 43" xml:space="preserve" fill="#b5b9be">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
               </button>
               <button class="photo-post__change-button button-contrast" type="button" aria-label="Контрастность">
-                <img class="photo-post__change-icon button-contrast__icon" src="img/icon-editor-contrast.svg" width="33" height="33" alt="Контрастность">
+                <svg class="photo-post__change-icon button-contrast__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve" fill="#b5b9be">
+                  <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
               </button>
             </div>
             <ul class="photo-post__range-controls range-controls plain-list">
-              <li class="range-controls__item">
-                <div class="range-controls__bar"></div>
-                <div class="range-controls__toggle"></div>
+              <li class="range-controls__item range-controls__item--crop">
+                <!--<div class="range-controls__bar"></div>
+                <div class="range-controls__toggle"></div>-->
                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
               </li>
-              <li class="range-controls__item range-controls__item--vh">
-                <div class="range-controls__bar"></div>
-                <div class="range-controls__toggle"></div>
+              <li class="range-controls__item range-controls__item--fill range-controls__item--vh">
+                <!--<div class="range-controls__bar"></div>
+                <div class="range-controls__toggle"></div>-->
                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
               </li>
-              <li class="range-controls__item range-controls__item--vh">
-                <div class="range-controls__bar"></div>
-                <div class="range-controls__toggle"></div>
+              <li class="range-controls__item range-controls__item--contrast range-controls__item--vh">
+                <!--<div class="range-controls__bar"></div>
+                <div class="range-controls__toggle"></div>-->
                 <input class="range-controls__input" type="range" min="0" max="100" step="1">
               </li>
             </ul>

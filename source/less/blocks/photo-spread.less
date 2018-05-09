@@ -2,6 +2,8 @@
   margin: 0 auto;
   /*margin-top: -20px;*/
   padding: 50px 20px;
+  padding-top: 24px;
+  padding-bottom: 35px;
   font-family: @font-family-main;
   width: auto;
   position: relative;
@@ -16,7 +18,7 @@
     font-family: @font-family-main;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 450;
+    font-weight: 400;
     color: @color-main;
     text-align: center;
     width: auto;
@@ -26,13 +28,21 @@
 @media (min-width: @tablet-width) {
   .photo-spread {
     padding: 0;
-    padding-top: 62px;
-    padding-bottom: 82px;
+    padding-top: 43px;
+    padding-bottom: 68px;
   }
 
   .photo-spread__text {
     font-size: 18px;
     line-height: 30px;
     font-weight: 450;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-spread {
+    padding: 0;
+    padding-top: 6px;
+    padding-bottom: 65px;
   }
 }

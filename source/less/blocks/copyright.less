@@ -1,15 +1,17 @@
 .copyright {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding: 0;
   position: relative;
-  width: 150px;
+  width: 127px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__text {
-    margin: 0 auto;
+    margin: 0;
+    margin-top: -9px;
+    margin-right: 14px;
     padding: 0;
     font-family: @font-family-main;
     font-size: 14px;
@@ -20,7 +22,7 @@
 }
 
 .copyright__link {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -30,5 +32,38 @@
 @media (min-width: @tablet-width) {
   .copyright {
     margin-bottom: 0;
+    width: 154px;
+  }
+
+  .copyright__text {
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 25px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  .copyright__link-image {
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  .copyright__link-image {
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
   }
 }

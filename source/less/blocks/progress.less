@@ -1,34 +1,63 @@
 .progress {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: auto;
+  margin: 0;
+  padding: 0;
+  width: 320px;
   position: relative;
   background-color: @background-color-second;
 
   &__legend {
     margin: 0 auto;
-    margin-left: 20px;
-    padding: 0;
+    padding: 40px;
+    padding-bottom: 39px;
     font-family: @font-family-main;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 18px;
     font-weight: 400;
     color: @color-pink;
     text-align: center;
     text-transform: uppercase;
-    width: auto;
+    width: 320px;
     white-space: normal;
     display: table;
+    background-color: @background-color-second;
   }
+
+  &-list {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+.progress .progress-list {
+  padding: 0 20px;
+}
+
+.progress .progress-list__item {
+  margin-bottom: 42px;
+}
+
+.progress .progress-list__label {
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.progress .progress-list__input {
+  margin-right: 31px;
 }
 
 @media (min-width: @tablet-width) {
   .progress {
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 58px;
     padding: 0 58px;
-    padding-bottom: 48px;
-    width: 616px;
+    padding-bottom: 5px;
+    width: 620px;
     position: relative;
     background-color: @background-color-main;
     box-sizing: border-box;
@@ -36,13 +65,32 @@
     order: 3;
   }
 
+  .progress .progress-list {
+    padding: 0;
+  }
+
+  .progress .progress-list__item {
+    margin-bottom: 42px;
+  }
+
   .progress__legend {
     padding: 0 30px;
+    width: 437px;
+    background-color: @background-color-main;
+  }
+
+  .progress .progress-list__input {
+    margin-right: 21px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .progress {
+    margin: 0 auto;
+    margin-top: 56px;
+    padding: 0;
+    padding-left: 1px;
+    padding-right: 65px;
     padding-bottom: 0;
     width: 940px;
     height: 242px;
