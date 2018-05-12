@@ -11,27 +11,29 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <picture class="page-header__logo-picture">
-            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" alt="Логотип «ПИНК»" width="75" height="22">
           </picture>
         </a>
         <nav class="site-list">
-            <button class="site-list__toggle site-list__toggle--btn" type="button">Меню</button>
+          <div class="site-list__wrapper">
+            <button class="site-list__toggle" type="button"><span class="visually-hidden">Меню</span></button>
             <ul class="site-list__items plain-list">
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Главная</a>
+                <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
+                <a class="site-list__link site-list__link--active" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
+          </div>
         </nav>
       </div>
     </header>
