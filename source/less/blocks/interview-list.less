@@ -2,7 +2,6 @@
   margin: 0 auto;
   padding: 0;
   padding-left: 18px;
-  padding-bottom: 6px;
   width: auto;
   position: relative;
 }
@@ -15,18 +14,28 @@
 }
 
 .interview-list__input {
-  margin: 0;
+  /*margin: 0;
   margin-right: 31px;
   padding: 0;
   width: 40px;
   height: 40px;
   box-sizing: border-box;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;*/
+  ///***
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .interview-list__label {
   margin: 0;
   padding: 0;
+  padding-left: 70px;
   font-family: @font-family-main;
   font-size: 18px;
   line-height: 30px;
@@ -35,6 +44,37 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+}
+
+.interview-list__label input[type="radio"] + .interview-list__radio-indicator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: @color-white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.interview-list__label input[type="radio"]:hover + .interview-list__radio-indicator {
+  border: 2px solid @color-main;
+}
+
+.interview-list__label input[type="radio"]:checked + .interview-list__radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: @color-pink;
+  border-radius: 50%;
+}
+
+.interview-list__label input[type="radio"]:active + .interview-list__radio-indicator {
+  border: 2px solid @color-pink;
 }
 
 @media (min-width: @tablet-width) {

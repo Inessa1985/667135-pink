@@ -26,6 +26,15 @@
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
   }
+
+  &__input:hover {
+    border-color: @color-main;
+  }
+
+  &__input:focus {
+    border-color: @color-pink;
+    outline: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {

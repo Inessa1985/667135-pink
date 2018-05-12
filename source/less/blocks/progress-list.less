@@ -1,27 +1,28 @@
 .progress-list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0 20px;
-  padding-bottom: 45px;
   width: auto;
   position: relative;
 
   &__item {
     margin: 0 auto;
-    padding: 0;
+    margin-bottom: 41px;
   }
 
   &__input {
-    margin: 0;
+    margin-right: 31px;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
     padding: 0;
-    width: 39px;
-    height: 39px;
-    box-sizing: border-box;
-    border: 2px solid #e5e5e5;
+    border: 0;
   }
 
   &__label {
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
+    padding-left: 50px;
     height: 40px;
     font-family: @font-family-main;
     font-size: 18px;
@@ -29,14 +30,51 @@
     font-weight: 400;
     color: @color-main;
     box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+}
+
+.progress-list__txt {
+  padding-left: 20px;
+  padding-bottom: 8px;
+}
+
+.progress-list__label input[type="checkbox"] + .progress-list__checkbox-indicator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.progress-list__label input[type="checkbox"]:hover + .progress-list__checkbox-indicator {
+  border: 2px solid #283645;
+}
+
+.progress-list__label input[type="checkbox"]:checked + .progress-list__checkbox-indicator {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-size: 70%;
+  background-image: url("../img/icon-yes-pink.svg");
+  background-repeat: no-repeat;
+  background-position: 6px 8px;
+  fill: #d22856;
+}
+
+.progress-list__label input[type="checkbox"]:active + .progress-list__checkbox-indicator {
+  border: 2px solid #d22856;
 }
 
 @media (min-width: @tablet-width) {
   .progress-list {
     margin: 0;
     margin-top: 43px;
-    padding: 0;
   }
 
   .progress-list__item {

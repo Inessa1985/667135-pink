@@ -59,13 +59,9 @@ fieldset {
 
 // Применение базовых CSS стилей
 input[type="range"] {
-  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
   width: 242px; /* Указание параметра ширины требуется для Firefox. */
 }
-/*
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}*/
 
 input[type="range"]:focus {
   outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
@@ -85,7 +81,7 @@ input[type="range"]::-ms-track {
 // Оформление ползунка
 /* Специальные правила для браузеров на движках WebKit/Blink */
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   border: 2px solid @color-pink;
   height: 14px;
   width: 14px;
@@ -168,7 +164,7 @@ input[type="range"]:focus::-ms-fill-upper {
 @media (min-width: @tablet-width) {
   // Применение базовых CSS стилей
   input[type="range"] {
-    -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+    appearance: none; /* Скрывает слайдер, чтобы можно было создать свой -webkit-*/
     width: 202px; /* Указание параметра ширины требуется для Firefox. */
   }
 
@@ -190,7 +186,7 @@ input[type="range"]:focus::-ms-fill-upper {
 @media (min-width: @desktop-width) {
   // Применение базовых CSS стилей
   input[type="range"] {
-    -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+    appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
     width: 288px; /* Указание параметра ширины требуется для Firefox. */
   }
 
