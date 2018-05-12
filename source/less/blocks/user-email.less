@@ -39,6 +39,7 @@
 
 @media (min-width: @tablet-width) {
   .user-email {
+    margin-left: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -53,20 +54,40 @@
 
   .user-email__input {
     margin-top: 0;
+    margin-left: 0;
     margin-bottom: 10px;
     padding-left: 17px;
-    width: 498px;
+    width: 436px;
+  }
+
+  .user-email::after {
+    content: "";
+    position: absolute;
+    top: 148px;
+    right: -2px;
+    width: 62px;
+    height: 63px;
+    background-image: url("../img/icon-mail.svg");
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-email__label {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 19px;
     margin-bottom: 13px;
   }
 
   .user-email__input {
-    width: 375px;
+    padding-left: 17px;
+    width: 313px;
+  }
+
+  .user-email::after {
+    top: 0;
+    right: -62px;
   }
 }

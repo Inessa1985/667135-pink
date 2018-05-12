@@ -53,9 +53,23 @@
 
   .user-phone__input {
     margin-top: 16px;
+    margin-left: 0;
     margin-bottom: 10px;
     padding-left: 17px;
-    width: 498px;
+    width: 436px;
+  }
+
+  .user-phone::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -2px;
+    width: 62px;
+    height: 63px;
+    background-image: url("../img/icon-phone.svg");
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
@@ -63,12 +77,18 @@
   .user-phone__label {
     margin-top: 0;
     margin-bottom: 13px;
+    margin-left: 19px;
   }
 
   .user-phone__input {
     margin-top: 0;
     margin-bottom: 10px;
-    padding-left: 17px;
-    width: 375px;
+    padding-left: 18px;
+    width: 312px;
+  }
+
+  .user-phone::after {
+    top: 0;
+    right: 385px;
   }
 }
