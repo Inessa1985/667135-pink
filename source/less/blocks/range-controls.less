@@ -15,6 +15,112 @@
   padding-bottom: 22px;
 }
 
+// Оформление input type=range в посте фотографии
+
+// Применение базовых CSS стилей
+.range-controls__item input[type="range"] {
+  appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  width: 242px; /* Указание параметра ширины требуется для Firefox. */
+}
+
+.range-controls__item input[type="range"]:focus {
+  outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+}
+
+.range-controls__item input[type="range"]::-ms-track {
+  // Полоса диапазона
+  width: 242px;
+  cursor: pointer;
+  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+  height: 2px;
+  margin-left: -2px;
+}
+
+// Оформление ползунка
+/* Специальные правила для браузеров на движках WebKit/Blink */
+.range-controls__item input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  border: 2px solid @color-pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: @background-color-second;
+  cursor: pointer;
+  margin-top: -6px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+}
+
+.range-controls__item input[type="range"]::-webkit-slider-thumb:active {
+  background: @color-pink;
+}
+
+/* Тоже самое для Firefox */
+.range-controls__item input[type="range"]::-moz-range-thumb {
+  border: 2px solid @color-pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: @background-color-second;
+  cursor: pointer;
+}
+
+.range-controls__item input[type="range"]::-moz-range-thumb:active {
+  background: @color-pink;
+}
+
+/* Тоже самое для IE */
+.range-controls__item input[type="range"]::-ms-thumb {
+  border: 2px solid @color-pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: @background-color-second;
+  cursor: pointer;
+}
+
+.range-controls__item input[type="range"]::-ms-thumb:active {
+  background: @color-pink;
+}
+
+// Оформление полосы диапазона
+
+.range-controls__item input[type="range"]::-webkit-slider-runnable-track {
+  width: 242px;
+  height: 2px;
+  cursor: pointer;
+  background: #283645;
+  margin-left: -2px;
+}
+
+.range-controls__item input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #283645;
+}
+
+.range-controls__item input[type="range"]::-moz-range-track {
+  width: 242px;
+  height: 2px;
+  cursor: pointer;
+  background: #283645;
+  margin-left: -2px;
+}
+
+.range-controls__item input[type="range"]::-ms-fill-lower {
+  background: #283645;
+}
+
+.range-controls__item input[type="range"]:focus::-ms-fill-lower {
+  background: #283645;
+}
+
+.range-controls__item input[type="range"]::-ms-fill-upper {
+  background: #283645;
+}
+
+.range-controls__item input[type="range"]:focus::-ms-fill-upper {
+  background: #283645;
+}
+
 .range-controls__item--vh {
   display: none;
 }
@@ -72,6 +178,26 @@
   .range-controls__item--vh {
     display: block;
   }
+
+  // Применение базовых CSS стилей
+  .range-controls__item input[type="range"] {
+    appearance: none; /* Скрывает слайдер, чтобы можно было создать свой -webkit-*/
+    width: 202px; /* Указание параметра ширины требуется для Firefox. */
+  }
+
+  .range-controls__item input[type="range"]::-ms-track {
+    width: 202px;
+  }
+
+  // Оформление полосы диапазона
+
+  .range-controls__item input[type="range"]::-webkit-slider-runnable-track {
+    width: 202px;
+  }
+
+  .range-controls__item input[type="range"]::-moz-range-track {
+    width: 202px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -87,6 +213,26 @@
   }
 
   .range-controls__input {
+    width: 288px;
+  }
+
+  // Применение базовых CSS стилей
+  .range-controls__item input[type="range"] {
+    appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+    width: 288px; /* Указание параметра ширины требуется для Firefox. */
+  }
+
+  .range-controls__item input[type="range"]::-ms-track {
+    width: 288px;
+  }
+
+  // Оформление полосы диапазона
+
+  .range-controls__item input[type="range"]::-webkit-slider-runnable-track {
+    width: 288px;
+  }
+
+  .range-controls__item input[type="range"]::-moz-range-track {
     width: 288px;
   }
 }
