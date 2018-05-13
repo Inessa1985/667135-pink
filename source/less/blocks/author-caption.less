@@ -1,19 +1,20 @@
 .author-caption {
   margin: 0;
+  margin-top: -1px;
   padding: 0;
-  padding-left: 18px;
-  padding-bottom: 19px;
-  /*width: 280px;*/
+  padding-left: 17px;
+  padding-bottom: 20px;
   position: relative;
   background-color: @background-color-second;
 
   &--panorama {
     margin: 0 20px;
+    padding-bottom: 20px;
   }
 
   &__name {
     margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 17px;
     padding: 0;
     font-family: @font-family-main;
   }
@@ -74,12 +75,12 @@
     padding-left: 27px;
     padding-right: 32px;
     width: 300px;
-    min-height: 155px;
+    min-height: 154px;
     box-sizing: border-box;
 
     &__name {
       margin: 0 auto;
-      margin-top: 22px;
+      margin-top: 23px;
       padding: 0;
     }
 
@@ -90,11 +91,12 @@
 
   .author-caption--panorama {
     margin: 0 auto;
+    margin-top: -2px;
     padding: 0;
     padding-left: 27px;
-    padding-bottom: 29px;
+    padding-bottom: 20px;
     width: 620px;
-    min-height: 121px;
+    min-height: 118px;
     position: relative;
     background-color: @background-color-second;
   }
@@ -102,7 +104,7 @@
 
 @media (min-width: @desktop-width) {
   .author-caption {
-    min-height: 153px;
+    min-height: 154px;
   }
 
   .author-caption--panorama {
@@ -113,5 +115,9 @@
     min-height: 96px;
     position: relative;
     background-color: @background-color-second;
+  }
+
+  .author-caption__name {
+    margin-top: 25px;
   }
 }

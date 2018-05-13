@@ -1,6 +1,6 @@
 .download {
   margin: 0 auto;
-  padding: 28px 20px;
+  padding: 24px 20px;
   padding-bottom: 30px;
   width: auto;
   position: relative;
@@ -13,7 +13,7 @@
   &__btn {
     margin: 0;
     margin-bottom: 30px;
-    padding: 0;
+    padding-top: 10px;
     font-family: @font-family-main;
     font-size: 18px;
     line-height: 28px;
@@ -21,11 +21,23 @@
     color: @color-white;
     width: 280px;
     height: 55px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
     background-color: @background-color-dark;
     border: 3px solid @color-white;
     border-radius: 30px;
     box-sizing: border-box;
     cursor: pointer;
+  }
+
+  &__btn:hover {
+    color: @color-pink;
+    background-color: @color-white;
+  }
+
+  &__btn:active {
+    color: rgba(210, 40, 86, 0.3);
   }
 
   &__icon {
@@ -118,7 +130,7 @@
   .download__btn {
     margin: 0;
     margin-bottom: 45px;
-    padding: 0;
+    padding-top: 10px;
     width: 300px;
     background-color: transparent;
   }
@@ -144,20 +156,20 @@
   }
 
   .download__icon {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 
   .download__title,
   .download__title--vh {
-    margin-bottom: 54px;
+    margin-bottom: 50px;
     font-size: 50px;
     line-height: 60px;
     font-weight: 300;
   }
 
   .download__btn {
-    margin-bottom: 62px;
-    padding: 0;
+    margin-bottom: 65px;
+    padding: 15px;
     width: 300px;
     font-size: 21px;
     line-height: 18px;

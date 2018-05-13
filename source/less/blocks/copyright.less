@@ -3,7 +3,6 @@
   margin-bottom: 38px;
   padding: 0;
   position: relative;
-  width: 127px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +28,14 @@
   background-color: @background-color-main;
 }
 
+.copyright__link:hover path {
+  fill: @color-main;
+}
+
+.copyright__link:active path {
+  fill: #bec2c7;
+}
+
 @media (min-width: @tablet-width) {
   .copyright {
     margin-bottom: 0;
@@ -37,7 +44,7 @@
 
   .copyright__text {
     margin: 0;
-    margin-top: 2px;
+    margin-top: -1px;
     margin-left: 25px;
     padding: 0;
     font-size: 14px;

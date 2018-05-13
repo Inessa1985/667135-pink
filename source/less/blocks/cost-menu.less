@@ -8,6 +8,18 @@
   box-sizing: border-box;
 }
 
+.cost-menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-size: cover;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
+
 .cost-menu__wrapper {
   margin: 0 auto;
   padding: 0;
@@ -18,7 +30,7 @@
 
 .cost-menu__list {
   margin: 0 auto;
-  margin-left: -279px;
+  margin-left: -281px;
   padding: 0;
   padding-left: 20px;
   width: auto;
@@ -60,7 +72,7 @@
   top: 0;
   margin-left: -105px;
   padding-top: 7px;
-  padding-left: 40px;
+  padding-left: 45px;
   width: 72px;
   height: 73px;
   transform: rotate(-45deg);
@@ -110,7 +122,7 @@
   margin: 0;
   padding: 0;
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 22px;
   font-family: @font-family-main;
   font-size: 14px;
   line-height: 30px;
@@ -145,7 +157,13 @@
 @media (min-width: @tablet-width) {
   .cost-menu {
     padding-top: 88px;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
+  }
+
+  .cost-menu::after {
+    top: -1px;
+    left: 0;
+    height: 53px;
   }
 
   .cost-menu__wrapper {
@@ -178,13 +196,13 @@
 
   .cost-menu__hit::before {
     top: 0;
-    margin-left: -49px;
+    margin-left: -47px;
     padding-top: 1px;
     padding-left: 58px;
   }
 
   .cost-menu__hit::after {
-    margin-left: -49px;
+    margin-left: -46px;
     width: 61px;
     height: 61px;
     background-image: url("../img/bg-hit-tablet.svg"); //переподключить картинку для планшета
@@ -220,9 +238,10 @@
 
   .cost-menu__feature {
     padding-top: 9px;
-    padding-left: 15px;
+    padding-left: 14px;
     width: 155px;
-    height: 45px;
+    height: 47px;
+    text-transform: capitalize;
   }
 
   .cost-menu__feature--yes {
@@ -249,6 +268,13 @@
     padding-bottom: 96px;
   }
 
+  .cost-menu::after {
+    top: -1px;
+    left: 0;
+    width: 960px;
+    height: 80px;
+  }
+
   .cost-menu__wrapper {
     margin: 0 10px;
     /*margin-left: 10px;*/
@@ -266,6 +292,8 @@
 
   .cost-menu__hit::before {
     margin-left: -80px;
+    padding-top: 4px;
+    padding-left: 43px;
   }
 
   .cost-menu__hit::after {
@@ -292,7 +320,7 @@
 
   .cost-menu__title {
     margin: 0 auto;
-    margin-top: -7px;
+    margin-top: -10px;
     margin-bottom: -3px;
     font-size: 18px;
     line-height: 30px;

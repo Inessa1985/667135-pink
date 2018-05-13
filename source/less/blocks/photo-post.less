@@ -1,7 +1,7 @@
 .photo-post {
   margin: 0 auto;
   padding: 20px 0;
-  padding-bottom: 39px;
+  padding-bottom: 41px;
   width: auto;
   position: relative;
   background-color: @background-color-second;
@@ -44,45 +44,70 @@
 
   &__button-on {
     margin: 0;
-    margin-top: 36px;
+    margin-top: 39px;
     margin-left: 20px;
-    padding: 15px 0;
+    padding: 9px 0;
     font-family: @font-family-main;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     color: @color-pink;
     width: 278px;
-    height: auto;
+    height: 55px;
     background-color: @background-color-second;
-    border: 2px solid @color-pink;
+    border: 3px solid @color-pink;
     border-radius: 30px;
     cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+  &__button-on:hover {
+    color: @color-white;
+    background-color: @color-pink;
+  }
+
+  &__button-on:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &__button-off {
     margin: 0;
     margin-top: 12px;
     margin-left: 20px;
-    padding: 15px 0;
+    padding: 9px 0;
     font-family: @font-family-main;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     color: #dddfe0;
     width: 278px;
+    height: 55px;
     background-color: @background-color-second;
-    border: 2px solid #dddfe0;
+    border: 3px solid #dddfe0;
     border-radius: 30px;
     cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+  &__button-off:hover {
+    color: #dddedf;
+    border-color: #b5b9be;
+    background-color: @background-color-second;
+  }
+
+  &__button-off:active {
+    background-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (min-width: @tablet-width) {
   .photo-post {
     margin: 0 auto;
-    padding: 58px 0;
-    padding-bottom: 11px;
+    padding: 57px 0;
+    padding-bottom: 16px;
   }
 
   .photo-post__form {
@@ -117,7 +142,7 @@
     margin: 0;
     padding: 0;
     margin-left: 45px;
-    margin-top: -2px;
+    margin-top: -3px;
     width: 275px;
     height: 202px;
     box-sizing: border-box;
@@ -128,7 +153,7 @@
 
   .photo-post__button-on {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
     width: 260px;
   }
 
@@ -150,7 +175,7 @@
     padding: 57px 0;
     padding-left: 80px;
     padding-right: 54px;
-    padding-bottom: 55px;
+    padding-bottom: 54px;
     background-color: @background-color-second;
   }
 

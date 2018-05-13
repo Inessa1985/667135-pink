@@ -12,7 +12,7 @@
     padding: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -30,6 +30,14 @@
     border-radius: 50%;
     text-align: center;
     border: 3px solid #e9ebec;
+  }
+
+  .social__link:hover {
+    border-color: @color-main;
+  }
+
+  .social__link:active {
+    border-color: #e9ebec;
   }
 }
 
@@ -71,6 +79,15 @@
     margin-bottom: 0;
     width: 178px;
   }
+
+  .social .social__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -78,5 +95,13 @@
     margin-left: 239px;
     margin-bottom: 0;
     width: 178px;
+  }
+
+  .social .social__list {
+    margin: 0;
+    margin-left: -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

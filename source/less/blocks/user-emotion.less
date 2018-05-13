@@ -12,7 +12,7 @@
   &__label {
     margin: 0;
     padding: 10px 0;
-    padding-top: 32px;
+    padding-top: 33px;
     padding-bottom: 0;
     font-family: @font-family-main;
     font-size: 14px;
@@ -40,6 +40,15 @@
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
   }
+
+  &__input:hover {
+    border-color: @color-main;
+  }
+
+  &__input:focus {
+    border-color: @color-pink;
+    outline: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -62,9 +71,9 @@
 
   .user-emotion__input {
     margin-top: 21px;
-    margin-bottom: 45px;
+    margin-bottom: 52px;
     width: 496px;
-    height: 182px;
+    height: 193px;
     box-sizing: border-box;
   }
 }

@@ -1,7 +1,7 @@
 .user-button {
   margin: 0 auto;
   margin-bottom: 25px;
-  padding: 10px 20px;
+  padding: 9px 20px;
   width: auto;
   position: relative;
   background-color: @background-color-main;
@@ -23,6 +23,15 @@
     border: 2px solid @color-green;
     border-radius: 2px;
     cursor: pointer;
+  }
+
+  &__input:hover {
+    background-color: #1c9b5e;
+  }
+
+  &__input:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: 0;
   }
 }
 
